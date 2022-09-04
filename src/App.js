@@ -1,10 +1,9 @@
 import './App.css';
 import Header from './Components/Header/Header';
 import Title from './Components/Title/Title';
-import Carousel from './Components/Carousel/Carousel';
 import Main from './Components/Main/Main';
-import Footer from './Components/Footer/Footer';
 import ItemListsContainer from './Components/ItemListContainer/ItemListContainer';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -23,21 +22,20 @@ function App() {
     {id:12, title:"Cactus injertado", precio:"12000", descripcion:"", imagen:"cactusinjertado.jpg", categoria:1}]
   
   const items = productos.map(items => (
-    <ItemListsContainer valor={items.title}/>
+    <ItemListsContainer titulo={items.title} precio={"Precio unidad: $ " + items.precio} imagen={items.imagen}/>
   ));
   
   return (
     <div>
       <Header />
       <Title />
-      <Carousel />
       <div className='container'>
         <Main valor="Catálogo de productos"/>
         <div className="row d-flex justify-content-center">
           {items}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

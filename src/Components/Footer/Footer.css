@@ -1,0 +1,8 @@
+footer {
+    background-image: url(../../../public/img/footer-background.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.225);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.225);
+}
