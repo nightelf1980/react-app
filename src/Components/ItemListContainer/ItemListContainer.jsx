@@ -4,7 +4,7 @@ import ItemCount from "../ItemCount/ItemCount";
 const ItemListsContainer = (props) => {
     
     const onAdd = (quantity) => {
-            console.log(`Compraste ${quantity} unidades`);
+            console.log(`Agregaste ${quantity} unidades`);
     }
    
     return (
