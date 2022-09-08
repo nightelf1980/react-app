@@ -4,7 +4,7 @@ let subtitle = "Productos de Jardinería, plantas de interior y exterior, cactus
 
 const Title = () => {
     return (
-        <div class="container">
+        <div className="container">
             <div className="row">
                 <h1 className="text-center">{title}</h1>
                 <p className="text-center">{subtitle}</p>
