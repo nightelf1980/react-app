@@ -1,7 +1,7 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
 
-const Item = ({titulo, imagen, precio}) => {
+const Item = ({titulo, descripcion, imagen, precio}) => {
 
     const onAdd = (quantity) => {
         console.log(`Se agregaron ${quantity} unidades`);

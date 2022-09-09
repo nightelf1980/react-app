@@ -39,5 +39,17 @@ export const productos = [
     {id:38, title:"Tierra de hoja orgánica 40L", price:"4000", description:"40L", image:"tierradehoja.jpg", category:2},
     {id:39, title:"Sustrato plantas de interior 3L", price:"2500", description:"3L", image:"sustratos.jpg", category:2},
     {id:40, title:"Sustrato plantas de interior 10L", price:"12500", description:"10L", image:"sustratos.jpg", category:3},
-    {id:41, title:"Sustrato plantas de interior 50L", price:"17500", description:"10L", image:"sustratos.jpg", category:3}
+    {id:41, title:"Sustrato plantas de interior 50L", price:"17500", description:"10L", image:"sustratos.jpg", category:3},
+    {id:42, title:"Macetero Balcón Doble", price:"2700", description:"Varios colores", image:"balcondoble.jpg", category:4},
+    {id:43, title:"Macetero Animales", price:"3800", description:"Zorro", image:"zorro.jpg", category:4},
+    {id:44, title:"Macetero Animales", price:"3800", description:"Perezoso", image:"perezoso.jpg", category:4},
+    {id:45, title:"Macetero Animales", price:"3800", description:"Perrito", image:"perrito.jpg", category:4},
+    {id:46, title:"Macetero Animales", price:"3800", description:"Gato", image:"gato.jpg", category:4},
+    {id:47, title:"Macetero Animales", price:"4500", description:"Elefante", image:"elefante.jpg", category:4},
+    {id:48, title:"Macetero Y87", price:"3500", description:"Macetero de plástico. Colores disponibles: Blanco y Gris", image:"y87.jpg", category:4},
+    {id:49, title:"Macetero Y97-5", price:"4500", description:"Macetero de plástico. Colores disponibles: Blancop y gris", image:"y97-5.jpg", category:4},
+    {id:50, title:"Macetero Y125-2", price:"2500", description:"Macetero de plástico. Colores disponibles: Gris", image:"y125-2.jpg", category:4},
+    {id:51, title:"Macetero Y125-4", price:"3000", description:"Macetero de plástico. Colores disponibles: Rosa pálido", image:"y125-4.jpg", category:4},
+    {id:52, title:"Macetero Y132", price:"5500", description:"Macetero de plástico. Colores disponibles: Blanco", image:"y132.jpg", category:4},
+    {id:53, title:"Macetero Y97-4", price:"3500", description:"Varios colores", image:"y97-4.jpg", category:4}
 ];
