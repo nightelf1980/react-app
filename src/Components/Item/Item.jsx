@@ -1,19 +1,15 @@
 import React from "react";
-import ItemCount from "../ItemCount/ItemCount";
 
 const Item = ({titulo, descripcion, imagen, precio}) => {
-
-    const onAdd = (quantity) => {
-        console.log(`Se agregaron ${quantity} unidades`);
-}
-
     return (
         <div className="card">
             <div className="card-body">
-                <img src={"../../img/" + imagen} className="card-img-top" alt={titulo} title={titulo}/>
+                <img src={"../../img/products/" + imagen} className="card-img-top" alt={titulo} title={titulo}/>
                 <h5 className="card-title text-center py-1">{titulo}</h5>
-                <p className="card-title text-center">{precio}</p>
-                <ItemCount initial={1} stock ={5} onAdd = {onAdd}/>
+                <p className="card-title text-center text-muted">{precio}</p>
+                <div className='py-2 text-center'>
+                <button className='btn btn-success'>Ver más</button>
+            </div>
             </div>
         </div>
     )
