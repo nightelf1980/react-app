@@ -2,7 +2,7 @@ export const productos = [
     {
         id:1,
         title:"Agave Attenuata",
-        price:"4500",
+        price:"4550",
         description:"Agave attenuata, comúnmente llamada ágave atenuado, ágave del dragón o cuello de cisne, es una especie suculenta perteneciente a la familia de las agaváceas. Sus tallos alcanzan los 50 a 150 cm de longitud, eventualmente sus hojas viejas caen dejándolo desnudo y visible. Las hojas son ovadas, acuminadas de 70 cm de longitud y 12-16 cm de ancho, de color gris a amarillo-verdoso, pálidas y sin espinas. La inflorescencia es un racimo denso de 2,5 a 3 metros de altura, con flores de color amarillo-verdoso.",
         image:"agaveattenuata.jpg",
         stock: 7,
@@ -11,16 +11,16 @@ export const productos = [
     {
         id:2,
         title:"Alegria Nueva Guinea",
-        price:"3000",
+        price:"3580",
         description:"Es una planta originaria de Nueva Guinea de tallos carnosos con hojas de color verde claro. Las flores varían mucho debido a la gran cantidad de variedades que hay. La Alegría guineana debe cultivarse en exposiciones con claridad pero sin sol directo o en semisombra. Son sensibles al frío por lo que se cultivan como planta de temporada.",
         image:"alegrianuevaguinea.jpg",
-        stock: 20,
+        stock: 0,
         category:1
     },
     {
         id:3, 
         title:"Aloe Vera", 
-        price:"3500", 
+        price:"5510", 
         description:"Aloe vera, llamado sábila, acíbar o áloe de Barbados, entre otros, es una especie suculenta de la familia Asphodelaceae. Es una planta de hoja perenne, probablemente se originó en la Península Arábica, pero crece de forma silvestre en climas tropicales, semitropicales y áridos de todo el mundo. Se cultiva para productos comerciales, principalmente como tratamiento tópico utilizado durante siglos. La especie es atractiva con fines decorativos y tiene éxito en interiores como planta de maceta.", 
         image:"aloevera.jpg",
         stock: 17, 
@@ -62,9 +62,30 @@ export const productos = [
         stock: 18,
         category:1
     },
-    {id:8, title:"Bacopa", price:"5000", description:"", image:"bacopa.jpg", category:1},
-    {id:9, title:"Begonia", price:"5500", description:"", image:"begonia.jpg", category:1},
-    {id:10, title:"Begonia Dragon Wing", price:"6500", description:"", image:"begoniadragonwing.jpg", category:1},
+    {
+        id:8, 
+        title:"Bacopa", 
+        price:"5540", 
+        description:"", 
+        image:"bacopa.jpg", 
+        category:1
+    },
+    {
+        id:9, 
+        title:"Begonia", 
+        price:"5590", 
+        description:"", 
+        image:"begonia.jpg", 
+        category:1
+    },
+    {
+        id:10, 
+        title:"Begonia Dragon Wing", 
+        price:"6500", 
+        description:"", 
+        image:"begoniadragonwing.jpg", 
+        category:1
+    },
     {id:11, title:"Cactus Grusonii", price:"120000", description:"", image:"cactusgrusonii.jpg", category:1},
     {id:12, title:"Cactus injertado", price:"12000", description:"", image:"cactusinjertado.jpg", category:1},
     {id:13, title:"Cactus San Pedro", price:"8000", description:"", image:"cactussanpedro.jpg", category:1},

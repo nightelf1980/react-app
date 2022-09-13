@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
                 const itemDetail = productos.find((pr) => pr.id === 3)
                 setTimeout(() => {
                     response(itemDetail)
-                }, 2000)
+                }, 0)
             })
             getProductos()
                 .then((info) => {
@@ -27,8 +27,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
-            <h3>ItemDetailContainer</h3>
-            <ItemDetail titulo={items.title} descripcion={items.description} precio={<b>{"Precio: $ " + items.price}</b>} imagen={items.image} max={items.stock}/>
+            <ItemDetail titulo={items.title} descripcion={items.description} precio={items.price} imagen={items.image} max={items.stock}/>
         </div>
         
     )
