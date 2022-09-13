@@ -27,7 +27,7 @@ const ItemDetail = ({titulo, descripcion, imagen, max, precio}) => {
                             <p className="text-end fw-bold">{qStock}</p>
                             <p className="text-end text-muted">({max} unidades disponibles)</p>
                         </div>
-                        <div>
+                        <div className="card-body">
                             <h4>Descripción</h4>
                             <p className="card-text">{descripcion}</p>
                         </div>

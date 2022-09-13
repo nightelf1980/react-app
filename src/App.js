@@ -22,6 +22,7 @@ const App = () => {
           <Route exact path="/catalogo/tierradehoja" element={<Catalogo categoria="2"/>} />
           <Route exact path="/catalogo/sustratos" element={<Catalogo categoria="3"/>} />
           <Route exact path="/catalogo/maceteros" element={<Catalogo categoria="4"/>} />
+          <Route exact path="/catalogo/:id" element={<Catalogo id/>} />
         </Routes>
       </BrowserRouter>
       <Footer />  
