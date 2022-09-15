@@ -1,39 +1,73 @@
-import React from "react";
-import logo from "../../../assets/img/artemis-logo-color.png";
-/* import { Link } from "react-router-dom"; */
+/* import React, { Component } from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
+
+
+import CartWidget from "../CartWidget/CartWidget";
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import "./Navbar.css"
 
-const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light col-md-11 ">
-      <a className="navbar-brand" href={"/"}>
-        <img className="animate__animated animate__fadeIn" src={logo} alt="logo" width="100px" />
-      </a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Información</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/">Cactus</a></li>
-              <li><a class="dropdown-item" href="/">Suculentas</a></li>
+class Navigation extends Component {
+  render() {
+    return (
+      <div className="container-fluid row d-flex bg-light justify-content-center">
+        <nav className="navbar navbar-expand-lg navbar-light col-md-11">
+          <Navbar.Brand className="navbar-brand">
+            <Nav.Link className="nav-link" to="/" ><img className="animate__animated animate__fadeIn" src={logo} alt="logo" width="100px" /></Nav.Link>
+          </Navbar.Brand>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <NavItem className="nav-item">
+                <Nav.Link className="nav-link" to="/pages/servicios" >Servicios</Nav.Link>
+              </NavItem>
+              <NavItem className="nav-item">
+                <Nav.Link to="/pages/catalogo" >Catálogo</Nav.Link>
+              </NavItem>
+              <NavItem className="nav-item">
+                <Nav.Link className="nav-link" to="/pages/nosotros" >Nosotros</Nav.Link>
+              </NavItem>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/">Interior y Exterior</a></li>
-              <li><a class="dropdown-item" href="/">Tierra de hoja</a></li>
-              <li><a class="dropdown-item" href="/">Sustratos</a></li>
-              <li><a class="dropdown-item" href="/">Maceteros</a></li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+        </nav>
+        <CartWidget />
       </div>
-    </nav>
-  )
+    )
+  }
 }
 
-export default Navbar
+export default Navigation */
+
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import logo from "../../../assets/img/artemis-logo-color.png";
+import Navbar from 'react-bootstrap/Navbar';
+import CartWidget from "../CartWidget/CartWidget";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+const NavigationBar = () => {
+  return (
+    <>
+      <Navbar className="container-fluid row d-flex bg-light justify-content-center" bg="light" variant="light">
+        <Container className="navbar navbar-expand-lg navbar-light col-md-11">
+          <Navbar.Brand href="/"><img className="animate__animated animate__fadeIn" src={logo} alt="logo" width="100px" /></Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/pages/nosotros">NOSOTROS</Nav.Link>
+            <NavDropdown title="CATÁLOGO" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="/pages/catalogo/:id">PLANTAS DE INTERIOR Y EXTERIOR</NavDropdown.Item>
+              <NavDropdown.Item href="/pages/catalogo/:id">TIERRA DE HOJA</NavDropdown.Item>
+              <NavDropdown.Item href="/pages/catalogo/:id">SUSTRATOS</NavDropdown.Item>
+              <NavDropdown.Item href="/pages/catalogo/:id">MACETEROS</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/pages/servicios">SERVICIOS</Nav.Link>
+
+
+          </Nav>
+        </Container>
+        <CartWidget />
+      </Navbar>
+      
+    </>
+  );
+}
+
+export default NavigationBar;

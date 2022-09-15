@@ -31,9 +31,6 @@ const Main = () => {
                                         <h5 class="card-title text-center py-1">Cactus</h5>
                                         <p class="card-title text-center">Las cactáceas, son conocidas en conjunto como cactos, cactus o cacti</p>
                                     </div>
-                                    <div class="card-footer text-center">
-                                        <a href="/" class="btn boton-ver btn-secondary">Más información</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6 py-3">
@@ -42,9 +39,6 @@ const Main = () => {
                                         <img src="../../img/principalCard/suculentasCard.jpg" class="card-img-top" alt="Suculentas" />
                                         <h5 class="card-title text-center py-1">Suculentas</h5>
                                         <p class="card-title text-center">La palabra 'Suculenta' viene del latín succulentus, que significa: 'jugoso'</p>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <a href="/" class="btn boton-ver btn-secondary">Más información</a>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +59,6 @@ const Main = () => {
                                             <h5 class="card-title text-center py-1">Productos a la venta</h5>
                                             <p class="card-title text-center">Hermosas plantas tanto de interior como de exterior.</p>
                                         </div>
-                                        <div class="card-footer text-center">
-                                        <a href="/" class="btn boton-ver btn-success">Ir a comprar</a></div>
                                     </div>
                                 </div>
                             <div class="col-md-6 py-3">
@@ -75,9 +67,6 @@ const Main = () => {
                                         <img src="../../img/principalCard/sustratosCard.jpg" class="card-img-top" alt="Sustratos" />
                                             <h5 class="card-title text-center py-1">Sustratos</h5>
                                             <p class="card-title text-center">Tierra de hoja y sustratos para suculentas y plantas de interior</p></div>
-                                        <div class="card-footer text-center">
-                                            <a href="/" class="btn boton-ver btn-success">Ir a comprar</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

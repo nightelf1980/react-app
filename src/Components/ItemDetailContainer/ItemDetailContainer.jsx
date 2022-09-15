@@ -35,12 +35,11 @@ const ItemDetailContainer = () => {
             </div>
         </div>
 
-
         :
+
         <div>
             <ItemDetail titulo={items.title} descripcion={items.description} precio={items.price} imagen={items.image} max={items.stock}/>
         </div>
-        
     )
 }
 
