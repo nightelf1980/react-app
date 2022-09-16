@@ -9,7 +9,7 @@ import Item from "../Item/Item";
 
 const ItemDetailContainer = () => {
     const [items, setItem] = useState([])
-/*     const [loading, setLoading] = useState(true) */
+    const [loading, setLoading] = useState(true)
     const {detalleId} = useParams();
 
         const getProductos = (id) => {
@@ -23,14 +23,14 @@ const ItemDetailContainer = () => {
 
 
 })}
-/*             getProductos()
+                getProductos()
                 .then((info) => {
                     setItem(info)
                 })
                 .catch((error) => {
                     console.log(error)
                 })
-                .finally(() => setLoading(false)) */
+                .finally(() => setLoading(false))
 
 
     useEffect(() => {
@@ -44,14 +44,14 @@ const ItemDetailContainer = () => {
 
 
     return (
-/*         loading ? 
+        loading ? 
         <div className="col-md-12 text-center">
             <div className="spinner-border text-success" role="status">
                 <span className="visually-hidden"></span>
             </div>
         </div>
 
-        : */
+        :
 
         <div>
             <ItemDetail id={items.id} titulo={items.title} descripcion={items.description} imagen={items.image} max={items.stock} precio={items.price}/>

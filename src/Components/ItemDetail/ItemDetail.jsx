@@ -1,5 +1,6 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import '../ItemDetail/ItemDetail.css'
 
 const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
     let numeroPrecio = parseFloat(precio);
@@ -20,8 +21,6 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
                         <div className="card-body">
                             <h2 className="card-title">{titulo}</h2>
                             <h5 className="card-text fw-bold">Precio: ${precio}</h5>
-                            <h5 className="card-text fw-bold">ID: {id}</h5>
-                            <h5 className="card-text fw-bold">Max: {max}</h5>
                             <p className="text-success"><b>Llévatelo en 6 cuotas de $ {(numeroPrecio /6).toFixed(0)} sin interés</b></p>
                         </div>
                         <div>
@@ -33,6 +32,7 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
                             <h4>Descripción</h4>
                             <p className="card-text">{descripcion}</p>
                         </div>
+                        <button className='btn btn-secondary button-back'><a href="javascript:history.back(-1);">Volver atrás</a></button>
                     </div>
                 </div>
             </div>
