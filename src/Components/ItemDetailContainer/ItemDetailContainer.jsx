@@ -54,7 +54,6 @@ const ItemDetailContainer = () => {
         : */
 
         <div>
-            <Item id={items.id} titulo={items.title} descripcion={items.description} imagen={items.image} max={items.stock} precio={items.price}/>
             <ItemDetail id={items.id} titulo={items.title} descripcion={items.description} imagen={items.image} max={items.stock} precio={items.price}/>
         </div>
     )
