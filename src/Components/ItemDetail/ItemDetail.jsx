@@ -32,7 +32,14 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
                             <h4>Descripción</h4>
                             <p className="card-text">{descripcion}</p>
                         </div>
-                        <button className='btn btn-secondary button-back'><a href="javascript:history.back(-1);">Volver atrás</a></button>
+                        <div className="card-body row col-md-12">
+                            <div className="col-md-5 offset-md-1 text-center">
+                                <button className='btn btn-secondary button-back'><a href="/pages/catalogo">Volver al catálogo</a></button>
+                            </div>
+                            <div className="col-md-5 offset-md-1 text-center">
+                                <button className='btn btn-warning button-back'><a href={id + 1} >Siguiente producto</a></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

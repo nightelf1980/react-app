@@ -157,7 +157,7 @@ export const productos = [
     {id:36, title:"Echeveria Agavoides", price:"3500", description:"", image:"echeveriaagavoides.jpg", stock: 4, category:1},
     {id:37, title:"Tierra de hoja orgánica 8L", price:"2000", description:"8L", image:"tierradehoja.jpg", stock: 12, category:2},
     {id:38, title:"Tierra de hoja orgánica 40L", price:"4000", description:"40L", image:"tierradehoja.jpg", stock: 4, category:2},
-    {id:39, title:"Sustrato plantas de interior 3L", price:"2500", description:"3L", image:"sustratos.jpg", stock: 3, category:2},
+    {id:39, title:"Sustrato plantas de interior 3L", price:"2500", description:"3L", image:"sustratos.jpg", stock: 3, category:3},
     {id:40, title:"Sustrato plantas de interior 10L", price:"12500", description:"10L", image:"sustratos.jpg", stock: 10, category:3},
     {id:41, title:"Sustrato plantas de interior 50L", price:"17500", description:"50L", image:"sustratos.jpg", category:3},
     {id:42, title:"Macetero Balcón Doble", price:"2700", description:"Varios colores", image:"balcondoblecafe.jpg", stock: 2, category:4},

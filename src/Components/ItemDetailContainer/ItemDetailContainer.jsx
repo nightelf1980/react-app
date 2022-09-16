@@ -4,22 +4,19 @@ import { useState } from "react";
 import { useParams } from 'react-router-dom';
 import { productos } from "../../Database/Productos";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import Item from "../Item/Item";
-
 
 const ItemDetailContainer = () => {
     const [items, setItem] = useState([])
     const [loading, setLoading] = useState(true)
     const {detalleId} = useParams();
 
-        const getProductos = (id) => {
-            return new Promise ((response, reject) => {
-                
-                setTimeout(() => {
-                    const producto = productos.find(items=>items.id === parseInt(detalleId));
-                    response(producto)
-                    console.log(producto);
-        }, 2000)
+    const getProductos = (id) => {
+        return new Promise ((response, reject) => {
+            
+            setTimeout(() => {
+                const producto = productos.find(items=>items.id === parseInt(detalleId));
+                response(producto)
+    }, 2000)
 
 
 })}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-const Item = ({id, titulo, descripcion, imagen, max, precio}) => {
+const Item = ({id, titulo, descripcion, imagen, max, precio, categoria}) => {
     return (
         <div className="card">
             <div className="card-body">
