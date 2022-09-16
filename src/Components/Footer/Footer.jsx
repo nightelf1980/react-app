@@ -18,7 +18,7 @@ const Footer = () => {
                     {/* COLUMNA */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Productos a la venta</h6>
-                        <p><a className="text-dark" href="/">Catálogo de productos</a></p>
+                        <p><a className="text-dark" href="/pages/catalogo">Catálogo de productos</a></p>
                     </div>
                     {/* COLUMNA */}
                     <hr className="w-100 clearfix d-md-none" />
