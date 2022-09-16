@@ -251,14 +251,78 @@ export const productos = [
         stock: 4, 
         category:1
     },
-    {id:29, title:"Dólar Blanco", price:"8000", description:"", image:"dolarblanco.jpg", stock: 5, category:1},
-    {id:30, title:"Dólar Negro", price:"6000", description:"", image:"dolarnegro.jpg", stock: 0, category:1},
-    {id:31, title:"Dólar Variegado", price:"6000", description:"", image:"dolarvariegado.jpg", stock: 0, category:1},
-    {id:32, title:"Dólar Verde", price:"6000", description:"", image:"dolarverde.jpg", stock: 1, category:1},
-    {id:33, title:"Dracena Lemon", price:"7500", description:"", image:"dracenalimon.jpg", stock: 3, category:1},
-    {id:34, title:"Dracena Multicolor", price:"12000", description:"", image:"dracenamulticolor.jpg", stock: 2, category:1},
-    {id:35, title:"Dracena Verde", price:"10500", description:"", image:"dracenaverde.jpg", stock: 6, category:1},
-    {id:36, title:"Echeveria Agavoides", price:"3500", description:"", image:"echeveriaagavoides.jpg", stock: 4, category:1},
+    {
+        id:29, 
+        title:"Dólar Blanco", 
+        price:"8000", 
+        description:"Una nueva versión del dólar: hojas verdes y vetas blancas que le dan un brillo y tonalidad plateado. El dólar blanco recibe los mismos cuidados que sus hermanos variegado, negro, verde e incienso: Ubícalo en lugares iluminados sin sol directo. Riega habitualmente pero cuida que el sustrato no se encharque. Míralo estirar sus ganchos y cubrir como una cascada.", 
+        image:"dolarblanco.jpg", 
+        stock: 5, 
+        category:1
+    },
+    {
+        id:30,
+        title:"Dólar Negro", 
+        price:"6000", 
+        description:"El dólar negro es una planta de interior que se caracteriza por su elegancia, este tiene unas hojas de color verde y en su dorso las cubre un color morado característico de esta planta, es una especie que no requiere de muchos cuidados.", 
+        image:"dolarnegro.jpg", 
+        stock: 0, 
+        category:1
+    },
+    {
+        id:31, 
+        title:"Dólar Variegado", 
+        price:"6000", 
+        description:"Un clásico de las plantas de interior en su versión moderna: este dólar cuenta con hojas verdes y amarillas, es súper llamativo y estamos enamoradas de él. La parte de atrás de sus hojas - el envés - es de color morado, por lo que se generan unos contrastes muy lindos en la planta, ideal para mezclarse entre distintas especies de clásico color verde. ", 
+        image:"dolarvariegado.jpg", 
+        stock: 0, 
+        category:1
+    },
+    {
+        id:32, 
+        title:"Dólar Verde", 
+        price:"6000", 
+        description:"El dólar verde es una planta de exterior, tiene algunas cualidades que la hacen una buena opción, este dólar tiene la cualidad de que guarda agua en sus hojas como si fuera una suculenta, lo cual la convierte en una especie que puede sobrevivir en múltiples espacios.", 
+        image:"dolarverde.jpg", 
+        stock: 1, 
+        category:1
+    },
+    {
+        id:33, 
+        title:"Dracena Lemon", 
+        price:"7500", 
+        description:"Originaria de Madagascar y conocida en inglés con el nombre de “planta dragón”por su savia roja, la Dracena limón es una planta preciosa y elegante que embellecerá tus espacios. No sólo tiene unas líneas estupendas y colores vivos, sino que es muy fácil de cuidar.", 
+        image:"dracenalimon.jpg", 
+        stock: 3, 
+        category:1
+    },
+    {
+        id:34, 
+        title:"Dracena Multicolor", 
+        price:"12000", 
+        description:"La dracena multicolor, es una linda planta de interior que dará vida a tu casa, su mayor atractivo es su tronco texturado y sus hojas que de tonos verde, amarillo y tierra. Es una planta que crece bien en cualquier lugar de la casa, solo requiere  lugares iluminados. Se debe riego bajo, sólo cuando el sustrato este seco. No resiste heladas.", 
+        image:"dracenamulticolor.jpg", 
+        stock: 2, 
+        category:1
+    },
+    {
+        id:35, 
+        title:"Dracena Verde", 
+        price:"10500", 
+        description:"También llamada palmera dracena, sus hojas son perennes de color verde, miden casi un metro de largo, son lanceoladas y de porte arqueado. Es una especie muy apreciada en jardínería.", 
+        image:"dracenaverde.jpg", 
+        stock: 6, 
+        category:1
+    },
+    {
+        id:36, 
+        title:"Echeveria Agavoides", 
+        price:"3500", 
+        description:"Echeveria es un género de plantas suculentas de la familia de las Crassulaceae y lo integran unas 400 especies originarias de la zona meridional de Norteamérica, Centroamérica y la parte más septentrional de Sudamérica", 
+        image:"echeveriaagavoides.jpg", 
+        stock: 4, 
+        category:1
+    },
     {id:37, title:"Tierra de hoja orgánica 8L", price:"2000", description:"8L", image:"tierradehoja.jpg", stock: 12, category:2},
     {id:38, title:"Tierra de hoja orgánica 40L", price:"4000", description:"40L", image:"tierradehoja.jpg", stock: 4, category:2},
     {id:39, title:"Sustrato plantas de interior 3L", price:"2500", description:"3L", image:"sustratos.jpg", stock: 3, category:3},
