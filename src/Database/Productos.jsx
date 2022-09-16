@@ -86,11 +86,46 @@ export const productos = [
         image:"begoniadragonwing.jpg", 
         category:1
     },
-    {id:11, title:"Cactus Grusonii", price:"120000", description:"", image:"cactusgrusonii.jpg", category:1},
-    {id:12, title:"Cactus injertado", price:"12000", description:"", image:"cactusinjertado.jpg", category:1},
-    {id:13, title:"Cactus San Pedro", price:"8000", description:"", image:"cactussanpedro.jpg", category:1},
-    {id:14, title:"Caladium Rojo", price:"18000", description:"", image:"caladiumrojo.jpg", category:1},
-    {id:15, title:"Calathea Insignis", price:"20000", description:"", image:"calatheainsignis.jpg", category:1},
+    {
+        id:11, 
+        title:"Cactus Grusonii", 
+        price:"120000", 
+        description:"", 
+        image:"cactusgrusonii.jpg", 
+        category:1
+    },
+    {
+        id:12, 
+        title:"Cactus injertado", 
+        price:"12000", 
+        description:"", 
+        image:"cactusinjertado.jpg", 
+        category:1
+    },
+    {
+        id:13, 
+        title:"Cactus San Pedro", 
+        price:"8000", 
+        description:"", 
+        image:"cactussanpedro.jpg", 
+        category:1
+    },
+    {
+        id:14, 
+        title:"Caladium Rojo", 
+        price:"18000", 
+        description:"", 
+        image:"caladiumrojo.jpg", 
+        category:1
+    },
+    {
+        id:15, 
+        title:"Calathea Insignis", 
+        price:"20000", 
+        description:"", 
+        image:"calatheainsignis.jpg", 
+        category:1
+    },
     {id:16, title:"Calathea Makoyana", price:"21000", description:"", image:"calatheamakoyana.jpg", category:1},
     {id:17, title:"Chamaedorea elegans", price:"13500", description:"", image:"chamaedoreaelegans.jpg", category:1},
     {id:18, title:"Cica", price:"4500", description:"", image:"cica.jpg", category:1},

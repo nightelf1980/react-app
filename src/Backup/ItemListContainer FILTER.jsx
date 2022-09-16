@@ -1,43 +1,34 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from 'react-router-dom';
 import { productos } from "../../Database/Productos";
 import ItemList from "../ItemList/ItemList"
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+
 
 const ItemListsContainer = () => {
     const [items, setItems] = useState([]);
-    const [loading, setLoading] = useState(true)
+    const {category} = useParams ();
 
     useEffect(() => {
+        
         const getProductos = () => 
             new Promise((response, reject) => {
+                getProductos.then(response => setItems(response.filter(producto => producto.category === category)))
                 setTimeout(() => {
                 response(productos);
                 }, 2000);
         });
+        console.log("Entré al useEffect");
 
-            getProductos()
-            .then((data) => {
-                setItems(data);
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-            .finally(() => setLoading(false))
-
-    }, []);
+        
+    }, [category]);
    
     return (
-        loading ? 
-        <div className="col-md-12 text-center">
-            <div className="spinner-border text-success" role="status">
-                <span className="visually-hidden"></span>
-            </div>
-        </div>
-
-        :
-
         <div className="container">
+            {console.log("Return")}
+            <ItemDetailContainer />
             <ItemList items={items} />
             
         </div>

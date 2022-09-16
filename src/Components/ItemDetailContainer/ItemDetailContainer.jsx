@@ -1,44 +1,61 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from 'react-router-dom';
 import { productos } from "../../Database/Productos";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import Item from "../Item/Item";
 
 
 const ItemDetailContainer = () => {
     const [items, setItem] = useState([])
-    const [loading, setLoading] = useState(true)
+/*     const [loading, setLoading] = useState(true) */
+    const {detalleId} = useParams();
 
-    useEffect(() => {
-        const getProductos = () =>
-            new Promise ((response, reject) => {
-                const itemDetail = productos.find((pr) => pr.id === 3)
+        const getProductos = (id) => {
+            return new Promise ((response, reject) => {
+                
                 setTimeout(() => {
-                    response(itemDetail)
-                }, 2000)
-            })
-            getProductos()
+                    const producto = productos.find(items=>items.id === parseInt(detalleId));
+                    response(producto)
+                    console.log(producto);
+        }, 2000)
+
+
+})}
+/*             getProductos()
                 .then((info) => {
                     setItem(info)
                 })
                 .catch((error) => {
                     console.log(error)
                 })
-                .finally(() => setLoading(false))
-    }, [])
+                .finally(() => setLoading(false)) */
+
+
+    useEffect(() => {
+        const getProducto = async() =>{
+            const detalle = await getProductos();
+            setItem(detalle)
+
+        }
+        getProducto();
+    },[detalleId])
+
 
     return (
-        loading ? 
+/*         loading ? 
         <div className="col-md-12 text-center">
             <div className="spinner-border text-success" role="status">
                 <span className="visually-hidden"></span>
             </div>
         </div>
 
-        :
+        : */
 
         <div>
-            <ItemDetail titulo={items.title} descripcion={items.description} precio={items.price} imagen={items.image} max={items.stock}/>
+            <Item id={items.id} titulo={items.title} descripcion={items.description} imagen={items.image} max={items.stock} precio={items.price}/>
+            <ItemDetail id={items.id} titulo={items.title} descripcion={items.description} imagen={items.image} max={items.stock} precio={items.price}/>
         </div>
     )
 }

@@ -42,7 +42,7 @@ import Nav from 'react-bootstrap/Nav';
 import logo from "../../../assets/img/artemis-logo-color.png";
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from "../CartWidget/CartWidget";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+/* import NavDropdown from 'react-bootstrap/NavDropdown'; */
 
 const NavigationBar = () => {
   return (
@@ -52,15 +52,14 @@ const NavigationBar = () => {
           <Navbar.Brand href="/"><img className="animate__animated animate__fadeIn" src={logo} alt="logo" width="100px" /></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/pages/nosotros">NOSOTROS</Nav.Link>
-            <NavDropdown title="CATÁLOGO" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/pages/catalogo/:id">PLANTAS DE INTERIOR Y EXTERIOR</NavDropdown.Item>
-              <NavDropdown.Item href="/pages/catalogo/:id">TIERRA DE HOJA</NavDropdown.Item>
-              <NavDropdown.Item href="/pages/catalogo/:id">SUSTRATOS</NavDropdown.Item>
-              <NavDropdown.Item href="/pages/catalogo/:id">MACETEROS</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/pages/catalogo">CATÁLOGO</Nav.Link>
+{/*             <NavDropdown title="CATÁLOGO" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="/pages/catalogo/1">PLANTAS DE INTERIOR Y EXTERIOR</NavDropdown.Item>
+              <NavDropdown.Item href="/pages/catalogo/2">TIERRA DE HOJA</NavDropdown.Item>
+              <NavDropdown.Item href="/pages/catalogo/3">SUSTRATOS</NavDropdown.Item>
+              <NavDropdown.Item href="/pages/catalogo/4">MACETEROS</NavDropdown.Item>
+            </NavDropdown> */}
             <Nav.Link href="/pages/servicios">SERVICIOS</Nav.Link>
-
-
           </Nav>
         </Container>
         <CartWidget />

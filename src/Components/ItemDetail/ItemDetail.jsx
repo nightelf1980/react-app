@@ -1,7 +1,7 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
 
-const ItemDetail = ({titulo, descripcion, imagen, max, precio}) => {
+const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
     let numeroPrecio = parseFloat(precio);
     let qStock = "";
     if (max > 0) {
@@ -20,6 +20,8 @@ const ItemDetail = ({titulo, descripcion, imagen, max, precio}) => {
                         <div className="card-body">
                             <h2 className="card-title">{titulo}</h2>
                             <h5 className="card-text fw-bold">Precio: ${precio}</h5>
+                            <h5 className="card-text fw-bold">ID: {id}</h5>
+                            <h5 className="card-text fw-bold">Max: {max}</h5>
                             <p className="text-success"><b>Llévatelo en 6 cuotas de $ {(numeroPrecio /6).toFixed(0)} sin interés</b></p>
                         </div>
                         <div>
