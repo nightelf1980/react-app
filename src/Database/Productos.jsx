@@ -30,7 +30,7 @@ export const productos = [
         id:4, 
         title:"Anthurium Andreanum", 
         price:"7500", 
-        description:"", 
+        description:"El Anturio o Anthurium andreanum es una planta de interior con doble interés decorativo: posee unas atractivas, llamativas, duraderas y singulares flores que visten de color la planta y unas hojas acorazonadas o lanceoladas (en punta), en tono verde muy resistentes y elegantes.", 
         image:"anthuriumandreanum.jpg",
         stock: 15, 
         category:1
@@ -39,16 +39,16 @@ export const productos = [
         id:5, 
         title:"Anthurium Coriaceum", 
         price:"4800", 
-        description:"", 
+        description:"¡Este anthurium es una planta tropical de grandes hojas que completará tus espacios y sorprenderá a tus visitas! Necesita estar en ambientes cálidos y húmedos, como su origen tropical de Brazil. Se dice que sus hojas pueden llegar a medir hasta 1 m de largo. Necesita de buena iluminación cuidando no exponer a sol directo. Riégala moderadamente, para evitar encharcamientos y posibles pudriciones.", 
         image:"anthuriumcoriaceum.jpg", 
         stock: 10,
         category:1
     },
     {
         id:6, 
-        title:"Aralia Japonica", 
+        title:"Aralia Japónica", 
         price:"4500", 
-        description:"", 
+        description:"Esta bella planta originaria de Japón, destaca por su versatilidad y resistencia, siendo utilizadas habitualmente para patios y entradas de residencias y edificios por la belleza de sus hojas brillantes y palmeadas, y también debido a que no requiere de mayores cuidados.", 
         image:"araliajaponica.jpg", 
         stock: 8,
         category:1
@@ -57,7 +57,7 @@ export const productos = [
         id:7, 
         title:"Aspidistra Variegada", 
         price:"6500", 
-        description:"", 
+        description:"Aspidistra elatior es una especie de planta rizomatosa perteneciente a la familia de las asparagáceas. Es nativa de Japón y ampliamente cultivada como planta ornamental.​​ Debe situarse en un lugar sombreado pues el sol directo la hace amarillear y perder su valor ornamental. Las Aspidistras son ideales para decorar entradas y patios con poca luz. ", 
         image:"aspidistravariegada.jpg", 
         stock: 18,
         category:1
@@ -66,7 +66,7 @@ export const productos = [
         id:8, 
         title:"Bacopa", 
         price:"5540", 
-        description:"", 
+        description:"Bacopa monnieri (bacopa, hisopo de agua, brahmi, lágrima de bebé, verdolaga de puerco) es una planta herbácea perenne rastrera cuyo hábitat incluye los humedales y las orillas fangosas.", 
         image:"bacopa.jpg",
         stock: 11,
         category:1
@@ -75,7 +75,7 @@ export const productos = [
         id:9, 
         title:"Begonia", 
         price:"5590", 
-        description:"", 
+        description:"Es una planta de interior con flor procedente de regiones tropicales de Asia, África y Sudamérica. Es un género muy prolífico del que se conocen más de 1.500 especies, entre ellas, una de las más conocidas es la begonia maculata.", 
         image:"begonia.jpg",
         stock: 1, 
         category:1
@@ -84,7 +84,7 @@ export const productos = [
         id:10, 
         title:"Begonia Dragon Wing", 
         price:"6500", 
-        description:"", 
+        description:"La begonia dragón wing o begonia semperflores es una planta ornamental de floración abundante muy adecuada para balcones, terrazas o porches donde no incida el sol directo.", 
         image:"begoniadragonwing.jpg", 
         stock: 5, 
         category:1
@@ -93,7 +93,7 @@ export const productos = [
         id:11, 
         title:"Cactus Grusonii", 
         price:"120000", 
-        description:"", 
+        description:"Echinocactus grusonii, llamado comúnmente asiento de suegra, bola de oro, barril de oro, o cactus erizo, es una especie perteneciente a la familia Cactaceae. El pequeño género al que pertenece, Echinocactus, junto con su género pariente Ferocactus, son vulgarmente conocidos como cactus barril.", 
         image:"cactusgrusonii.jpg",
         stock: 7,  
         category:1
@@ -102,7 +102,7 @@ export const productos = [
         id:12, 
         title:"Cactus injertado", 
         price:"12000", 
-        description:"", 
+        description:"La planta está compuesta por dos partes: la base la constituye un tallo verde de una variedad de cactus sobre la que se injertan los globos rojos, amarillos, naranjas y rosas del Gymnocalycium. No alcanzan gran tamaño y, normalmente, en los globos coloristas de la parte superior aparecen nuevos hijuelos, lo que le confiere un aspecto muy original y decorativo.", 
         image:"cactusinjertado.jpg", 
         stock: 9, 
         category:1
@@ -111,7 +111,7 @@ export const productos = [
         id:13, 
         title:"Cactus San Pedro", 
         price:"8000", 
-        description:"", 
+        description:"Echinopsis pachanoi, llamado comúnmente cactus de San Pedro, es una especie de plantas de la familia Cactaceae. Se utiliza en la medicina tradicional andina tanto para uso humano como veterinario y es ampliamente cultivado como planta ornamental", 
         image:"cactussanpedro.jpg",
         stock: 11,  
         category:1
@@ -120,7 +120,7 @@ export const productos = [
         id:14, 
         title:"Caladium Rojo", 
         price:"18000", 
-        description:"", 
+        description:"Los Caladium son plantas herbáceas con rizomas, las hojas nacen directamente del rizoma por lo que la altura de la planta estará dada por la altura de sus hojas. Necesitan buena luz y temperaturas cálidas.", 
         image:"caladiumrojo.jpg",
         stock: 13,  
         category:1
@@ -129,24 +129,128 @@ export const productos = [
         id:15, 
         title:"Calathea Insignis", 
         price:"20000", 
-        description:"", 
+        description:"Perteneciente a la familia de las Marantaceae. Existen unas 250 especies de Calatheas, con hojas de diferentes formas y tonalidades, con diseños espectaculares y tamaños diversos, como si hubieran sido pintadas a mano.", 
         image:"calatheainsignis.jpg",
         stock: 2,  
         category:1
     },
-    {id:16, title:"Calathea Makoyana", price:"21000", description:"", image:"calatheamakoyana.jpg", stock: 7, category:1},
-    {id:17, title:"Chamaedorea elegans", price:"13500", description:"", image:"chamaedoreaelegans.jpg", stock: 19, category:1},
-    {id:18, title:"Cica", price:"4500", description:"", image:"cica.jpg", stock: 9, category:1},
-    {id:19, title:"Cissus", price:"6000", description:"", image:"cissus.jpg", stock: 17, category:1},
-    {id:20, title:"Coleo", price:"4800", description:"", image:"coleo.jpg", stock: 15, category:1},
-    {id:21, title:"Crassula Arborescens", price:"2500", description:"", image:"crassulaarborescens.jpg", stock: 6, category:1},
-    {id:22, title:"Crassula Ovata", price:"3000", description:"", image:"crassulaovata.jpg", stock: 9, category:1},
-    {id:23, title:"Crassula Tetragona", price:"3500", description:"", image:"crassulatetragona.jpg", stock: 1, category:1},
-    {id:24, title:"Croton", price:"4000", description:"", image:"croton.jpg", stock: 0, category:1},
-    {id:25, title:"Cuerno de Alce", price:"15000", description:"", image:"cuernodealce.jpg", stock: 3, category:1},
-    {id:26, title:"Delosperma de Lehmann", price:"3500", description:"", image:"delospermalehmannii.jpg", stock: 7, category:1},
-    {id:27, title:"Dieffenbachia", price:"4500", description:"", image:"dieffenbachia.jpg", stock: 12, category:1},
-    {id:28, title:"Dipladenia", price:"12000", description:"", image:"dipladenia.jpg", stock: 4, category:1},
+    {
+        id:16, 
+        title:"Calathea Makoyana", 
+        price:"21000", 
+        description:"La Calathea Makoyana es una planta de interior con hojas verde claro y pequeñas manchas de color oscuro. Se la conoce también como planta Pavo Real o planta Catedral por el dibujo de sus hojas. La Calathea Makoyana es una planta perenne nativa de Brasil. Es resistente y muy fácil de cuidar.", 
+        image:"calatheamakoyana.jpg", 
+        stock: 7, 
+        category:1
+    },
+    {
+        id:17, 
+        title:"Chamaedorea elegans", 
+        price:"13500", 
+        description:"Esta pequeña palmera originaria de México y Guatemala es tan fácil de cultivar que se ha ganado un papel indiscutible dentro del grupo de plantas de interior resistentes que aguantan lo peor. Crea una pequeña mata compuesta por varios tallos palmeados, genera grupos densos muy elegantes. Sin duda es la palmácea más fácil de cultivar en interior.", 
+        image:"chamaedoreaelegans.jpg", 
+        stock: 19, 
+        category:1
+    },
+    {
+        id:18, 
+        title:"Cica",
+        price:"4500", 
+        description:"Es una planta oriunda del sur de Japón ejemplo paradigmático de las pseudopalmeras o cicadáceas. Se suele cultivar como planta de interior, ya que no soporta el frío, aunque en España vegeta a gusto en toda la franja costera y especialmente en la zona mediterránea.", 
+        image:"cica.jpg", 
+        stock: 9, 
+        category:1
+    },
+    {
+        id:19, 
+        title:"Cissus", 
+        price:"6000", 
+        description:"Sus tallos son finos y crecen con rapidez dando paso a nuevas hojas triobuladas de color verde brillante. Puntualmente aparecen los zarcillos, que son unas hojas modificadas que la planta utiliza para trepar sobre cualquier soporte.", 
+        image:"cissus.jpg", 
+        stock: 17, 
+        category:1
+    },
+    {
+        id:20, 
+        title:"Coleo", 
+        price:"4800", 
+        description:"El cóleo es una planta de origen tropical utilizada desde siempre para decorar el interior de nuestras casas. Los motivos son obvios; no hay más que ver la tremenda belleza de sus hojas variegadas. Cultivada sobre todo en interior por su escasa tolerancia al frío, también es posible en exteriores donde el clima lo permite.", 
+        image:"coleo.jpg", 
+        stock: 15, 
+        category:1
+    },
+    {
+        id:21, 
+        title:"Crassula Arborescens", 
+        price:"2500", 
+        description:"La crassula arborescens es una planta suculenta nativa de Sudáfrica, concretamente de la Provincia Cabo Occidental, aunque hoy la podemos encontrar en hogares de todo el mundo.", 
+        image:"crassulaarborescens.jpg", 
+        stock: 6, 
+        category:1
+    },
+    {
+        id:22, 
+        title:"Crassula Ovata", 
+        price:"3000", 
+        description:"La Crassula ovata, más conocida como árbol de jade o planta de jade, es una de las plantas más fáciles de cultivar. Si eres principiante en el mundo de las plantas o, sencillamente, no se te suelen dar muy bien, te recomendamos que tengas esta planta sí o sí en tu hogar.", 
+        image:"crassulaovata.jpg", 
+        stock: 9, 
+        category:1
+    },
+    {
+        id:23, 
+        title:"Crassula Tetragona", 
+        price:"3500", 
+        description:"La crassula tetragona es una planta nativa de Sudáfrica, pero fue una de las primeras suculentas en cultivarse en Europa en el siglo XVI. Hoy en día, es una de las suculentas más comunes jardines caseros y en la naturaleza.", 
+        image:"crassulatetragona.jpg", 
+        stock: 1, 
+        category:1
+    },
+    {
+        id:24, 
+        title:"Croton", 
+        price:"4000", 
+        description:"El crotón es una de las plantas de interior que posee la mayor gama de colores vivos en sus hojas. Estas son duras y poseen nervaduras con coloraciones muy atractivas que van desde el amarillo y el anaranjado hasta los tonos rojizos.", 
+        image:"croton.jpg", 
+        stock: 0, 
+        category:1
+    },
+    {
+        id:25, 
+        title:"Cuerno de Alce", 
+        price:"15000", 
+        description:"El Platycerium bifurcatum es un helecho que proviene de las regiones tropicales de Australia, África y Asia, donde vive adherido a los troncos de los árboles de las selvas frondosas y húmedas. Se le conoce también por lo nombres de cuerno de alce, debido a su parecido con los cuernos del animal, y Cacho de venado y pertenece a la familia Polypodiaceae", 
+        image:"cuernodealce.jpg", 
+        stock: 3, 
+        category:1
+    },
+    {
+        id:26, 
+        title:"Delosperma de Lehmann", 
+        price:"3500", 
+        description:"Son pequeñas plantas herbáceas suculentas que no suelen superar los 25 cm de altura. En los ejemplares jóvenes el tallo es de color rojizo y, a medida que la planta crece, se vuelve grisáceo. De este tallo surgen hojas unidas por la base que miden casi 2 cm de largo por 0,5 cm de ancho, son de color verde-gris y con la punta ligeramente redondeada. Producen flores amarillas de unos 4 cm de diámetro que se suelen abrir por la tarde.", 
+        image:"delospermalehmannii.jpg", 
+        stock: 7, 
+        category:1
+    },
+    {
+        id:27, 
+        title:"Dieffenbachia", 
+        price:"4500", 
+        description:"La dieffenbachia o diefembaquia es la planta de interiorpor excelencia de los rincones oscuros. Tolera muy bien la falta de luz, lo que la convierte en la mejor aliada para dar un 'toque de verde' a espacios apagados como el recibidor o el baño. ¡Queda muy decorativa!", 
+        image:"dieffenbachia.jpg", 
+        stock: 12, 
+        category:1
+    },
+    {
+        id:28, 
+        title:"Dipladenia", 
+        price:"12000", 
+        description:"La Dipladenia o Mandevilla es originaria mayormente de Brasil, aunque se la asocia a toda América del Sur, forma parte de la familia Apocynaceae y se ha convertido en una planta muy difundida. Puede cultivarse tanto en tierra como en macetas, ya sean combinadas, colgantes o solitaria y además atraerá abejas, colibríes y pájaros.", 
+        image:"dipladenia.jpg", 
+        stock: 4, 
+        category:1
+    },
     {id:29, title:"Dólar Blanco", price:"8000", description:"", image:"dolarblanco.jpg", stock: 5, category:1},
     {id:30, title:"Dólar Negro", price:"6000", description:"", image:"dolarnegro.jpg", stock: 0, category:1},
     {id:31, title:"Dólar Variegado", price:"6000", description:"", image:"dolarvariegado.jpg", stock: 0, category:1},
