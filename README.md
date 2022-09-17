@@ -66,6 +66,8 @@ Install dependencies
 
 ```bash
   npm install
+  npm install react-router-dom
+  npm install bootstrap
 ```
 
 Start the server
