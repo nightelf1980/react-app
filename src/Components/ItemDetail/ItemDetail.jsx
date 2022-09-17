@@ -1,4 +1,5 @@
-import React from "react";
+import React , {useState} from "react";
+import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import '../ItemDetail/ItemDetail.css'
 
@@ -10,6 +11,13 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
     } else {
         qStock = "Sin stock";
     }
+
+    const [Cart, setCart] = useState(false)
+
+    const onAdd = (quantity) => {
+        setCart(true)
+    }
+
     return (
         <div className="row col-md-10 offset-md-1">
             <div className="card">
@@ -21,10 +29,18 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
                         <div className="card-body">
                             <h2 className="card-title">{titulo}</h2>
                             <h5 className="card-text fw-bold">Precio: ${precio}</h5>
-                            <p className="text-success"><b>Llévatelo en 6 cuotas de $ {(numeroPrecio /6).toFixed(0)} sin interés</b></p>
+                            <p className="text-success"><b>Llévalo en 6 cuotas de $ {(numeroPrecio /6).toFixed(0)} sin interés</b></p>
                         </div>
                         <div>
-                            <ItemCount initial={1} stock ={max}/>
+                            {
+                                Cart
+                                ? <Link to="/pages/cart">
+                                    <div className="card-body text-center">
+                                        <button className='btn btn-success'>Finalizar Compra</button>
+                                    </div>
+                                </Link>
+                                : <ItemCount initial={1} stock ={max} onAdd={onAdd}/>
+                            }
                             <p className="text-end fw-bold">{qStock}</p>
                             <p className="text-end text-muted">({max} unidades disponibles)</p>
                         </div>
