@@ -35,7 +35,7 @@ const Footer = () => {
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Contacto</h6>
                         <p><i className="fas fa-home mr-3 text-secondary"></i> Lampa, Santiago, Chile.</p>
-                        <p><i className="fas fa-envelope mr-3 text-danger"></i> jardineriaartemis@gmail.com</p>
+                        <p><i className="fas fa-envelope mr-3 text-orange"></i> jardineriaartemis@gmail.com</p>
                         <p><i className="fas fa-phone mr-3 text-primary"></i> +569 8243 3747 | +569 9774 8104</p>
                         <i className="fa-solid fa-seedling text-success"></i><i className="fa-solid fa-hashtag animate__animated animate__bounceInRight m-2 text-success">Plantlover</i>
                     </div>
