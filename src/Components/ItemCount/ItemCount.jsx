@@ -20,7 +20,10 @@ const ItemCount = ({initial, stock, onAdd}) => {
             <span>{count}</span>
             <button className='btn m-2' disabled={count >= stock} onClick={Increase}><img src="/img/increase.png" width="15" title="Aumentar" alt=""/></button>
             <div className='py-2'>
-                <button className='btn btn-success' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar el Carrito</button>
+                <button className='btn btn-shop-primary' disabled={stock <= 0} onClick={() => onAdd(count)}>Comprar Ahora</button>
+            </div>
+            <div className='py-2'>
+                <button className='btn btn-cart-primary' disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar el Carrito</button>
             </div>
         </div>
     )

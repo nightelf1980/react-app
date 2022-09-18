@@ -2,3 +2,35 @@
     text-align: center;
     padding: 10px;
 }
+
+.btn-shop-primary {
+    --bs-btn-font-weight: 300;
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #3483fa;
+    --bs-btn-border-color: #3483fa;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #2A68C8;
+    --bs-btn-hover-border-color: #2A68C8;
+    --bs-btn-focus-shadow-rgb: transparent;
+    --bs-btn-active-color: transparent;
+    --bs-btn-active-bg: #3483fa;
+    --bs-btn-active-border-color: #2A68C8;
+    /* #DBE7FA */
+}
+
+.btn-cart-primary {
+    --bs-btn-font-weight: 300;
+    --bs-btn-color: #2A68C8;
+    --bs-btn-bg: #DBE7FA;
+    --bs-btn-border-color: #DBE7FA;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: #2A68C8;
+    --bs-btn-hover-bg: #c7dcff;
+    --bs-btn-hover-border-color: #c7dcff;
+    --bs-btn-focus-shadow-rgb: transparent;
+    --bs-btn-active-color: transparent;
+    --bs-btn-active-bg: #c7dcff;
+    --bs-btn-active-border-color: #c7dcff;
+    /* #DBE7FA */
+}

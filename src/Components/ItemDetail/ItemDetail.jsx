@@ -18,6 +18,11 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
         setCart(true)
     }
 
+    const fav = () => {
+        let contenido = `<i class="fa-solid fa-heart fa-lg"></i>`
+        document.getElementById("fav").innerHTML = contenido
+    }
+
     return (
         <div className="row col-md-10 offset-md-1">
             <div className="card">
@@ -26,19 +31,27 @@ const ItemDetail = ({id, titulo, descripcion, imagen, max, precio}) => {
                         <img src={"../../img/products/" + imagen} className="card-img-top" alt={titulo} title={titulo}/>
                     </div>
                     <div className="col-md-7 p-4">
-                        <div className="card-body">
-                            <h2 className="card-title">{titulo}</h2>
+                        <div className="card-body row d-flex">
+                            <div className="col-md-11">
+                                <h2 className="card-title col-md-11">{titulo}</h2>
+                            </div>
+                            <div className="col-md-1 text-center text-primary" id="fav">
+                                <i className="fa-regular fa-heart fa-lg" onClick={() => fav()} />
+                            </div>
                             <h5 className="card-text fw-bold">Precio: ${precio}</h5>
                             <p className="text-success"><b>Llévalo en 6 cuotas de $ {(numeroPrecio /6).toFixed(0)} sin interés</b></p>
                         </div>
                         <div>
                             {
                                 Cart
-                                ? <Link to="/pages/cart">
+                                ? <div>
+                                <ItemCount initial={1} stock ={max} onAdd={onAdd}/>
+                                    <Link to="/pages/cart">
                                     <div className="card-body text-center">
                                         <button className='btn btn-success'>Finalizar Compra</button>
                                     </div>
                                 </Link>
+                                </div>
                                 : <ItemCount initial={1} stock ={max} onAdd={onAdd}/>
                             }
                             <p className="text-end fw-bold">{qStock}</p>

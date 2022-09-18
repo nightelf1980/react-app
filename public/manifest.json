@@ -1,3 +1,13 @@
 {
-
+    "name": "jardineriaartemis.cl", 
+    "short_name": "Jardinería Artemis",
+    "background_color": "#ffffff",
+    "description": "Plantas de interior y exterior, cactus y suculentas, tierra de hoja y sustratos, maceteros",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/img/artemis-logo-color.png", "sizes": "500x500", "type": "image/png"
+            }
+        ], 
+    "start_url":"/"
 }
