@@ -34,10 +34,10 @@ const Footer = () => {
                     {/* COLUMNA */}
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                        <p><i className="fas fa-home mr-3"></i> Lampa, Santiago, Chile.</p>
-                        <p><i className="fas fa-envelope mr-3"></i> jardineriaartemis@gmail.com</p>
-                        <p><i className="fas fa-phone mr-3"></i> +569 8243 3747 | +569 9774 8104</p>
-                        <i className="fa-solid fa-seedling"></i><i className="fa-solid fa-hashtag animate__animated animate__bounceInRight m-2">Plantlover</i>
+                        <p><i className="fas fa-home mr-3 text-secondary"></i> Lampa, Santiago, Chile.</p>
+                        <p><i className="fas fa-envelope mr-3 text-danger"></i> jardineriaartemis@gmail.com</p>
+                        <p><i className="fas fa-phone mr-3 text-primary"></i> +569 8243 3747 | +569 9774 8104</p>
+                        <i className="fa-solid fa-seedling text-success"></i><i className="fa-solid fa-hashtag animate__animated animate__bounceInRight m-2 text-success">Plantlover</i>
                     </div>
                 </div>
             </div>
@@ -54,13 +54,11 @@ const Footer = () => {
                     <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
                         <p>Síguenos en Redes Sociales</p>
                         {/* FACEBOOK */}
-                        <a className="btn btn-outline-dark btn-floating m-1 text-dark" role="button" href="/"><i className="fab fa-facebook"></i></a>
-                        {/* TWITTER */}
-                        <a className="btn btn-outline-dark btn-floating m-1 text-dark"role="button" href="/"><i className="fab fa-twitter"></i></a>
+                        <a className="btn btn-floating m-1 text-primary" role="button" href="/"><i className="fab fa-facebook"></i></a>
                         {/* WHATSAPP */}
-                        <a className="btn btn-outline-dark btn-floating m-1 text-dark" role="button" href="https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></a>
+                        <a className="btn btn-floating m-1 text-success" role="button" href="https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></a>
                         {/* INSTAGRAM */}
-                        <a className="btn btn-outline-dark btn-floating m-1 text-dark" role="button" href="https://www.instagram.com/jardineria_artemis/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                        <a className="btn btn-floating m-1 text-danger" role="button" href="https://www.instagram.com/jardineria_artemis/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

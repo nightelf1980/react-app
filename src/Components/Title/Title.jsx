@@ -1,6 +1,6 @@
 import React from "react";
 let title = "JARDINERÍA ARTEMIS"
-let subtitle = "Productos de Jardinería, plantas de interior y exterior, cactus y suculentas."
+let subtitle = "Productos de Jardinería, plantas de exterior, interior, cactus y suculentas."
 
 const Title = () => {
     return (
