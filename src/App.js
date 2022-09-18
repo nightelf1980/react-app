@@ -19,7 +19,7 @@ function App () {
         <Navbar />
         <Title />
           <Routes>
-            <Route path="/" element={<Inicio />} />
+            <Route exact path="/" element={<Inicio />} />
             <Route path="/pages/servicios" element={<Servicios />} />
             <Route path="/pages/catalogo" element={<ItemListsContainer />} />
             <Route path="/pages/nosotros" element={<Nosotros />} />
