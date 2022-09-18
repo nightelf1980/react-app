@@ -18,7 +18,7 @@ const CartProvider = ({ children }) => {
 				}),
 			);
 		} else {
-			setCart([...cart, { ...items, quantity }]);
+			setCart([...cart, { ...items, quantity}]);
 		}
 	};
     console.log("Array Carrito", cart)
@@ -37,18 +37,3 @@ const CartProvider = ({ children }) => {
 }
 
 export default CartProvider
-
-
-/*     const addProduct = (items, quantity) => {
-        let newCart;
-        let product = cart.find(product => product.id === items.id);
-        if (product) {
-        product.quantity += quantity;
-        newCart = [...cart];
-        } else {
-        product = { ...items, quantity: quantity };
-        newCart = [...cart, product];
-        
-        setCart(newCart);
-        }
-    } */
