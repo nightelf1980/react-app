@@ -16,7 +16,6 @@
     --bs-btn-active-color: transparent;
     --bs-btn-active-bg: #3483fa;
     --bs-btn-active-border-color: #2A68C8;
-    /* #DBE7FA */
 }
 
 .btn-cart-primary {
@@ -32,5 +31,4 @@
     --bs-btn-active-color: transparent;
     --bs-btn-active-bg: #c7dcff;
     --bs-btn-active-border-color: #c7dcff;
-    /* #DBE7FA */
 }
