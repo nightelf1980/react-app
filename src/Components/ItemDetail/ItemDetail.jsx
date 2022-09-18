@@ -14,11 +14,11 @@ const ItemDetail = ({items}) => {
     }
 
     const [Cart, setCart] = useState(false)
-    const {addProduct} = useCartContext()
+    const {addItem} = useCartContext()
 
     const onAdd = (quantity) => {
         setCart(true)
-        addProduct(items, quantity)
+        addItem(items, quantity)
     }
 
     const fav = () => {
