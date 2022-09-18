@@ -1,5 +1,5 @@
 .hover-card :hover{
-    box-shadow: 0px 10px 10px rgba(12, 5, 62, 0.15);
+    box-shadow: 0px 10px 10px #0c053e26;
     z-index: 100;
 }
 
