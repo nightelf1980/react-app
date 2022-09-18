@@ -8,21 +8,28 @@ const CartProvider = ({ children }) => {
     const isInCart = (id) => cart.find(product => product.id === id) ? true : false
     const removeProduct = (id) => setCart(cart.filter(product => product.id !== id))
     
-    const addProduct = (item, newQuantity) => {
-        const newCart = cart.filter(prod => prod.id !== item.id)
-        newCart.push({...item, quantity: newQuantity})
-        setCart(newCart)
-    }
-
-    console.log("Carrito", cart)
-
+    const addProduct = (items, quantity) => {
+		if (isInCart(items.id)) {
+			setCart(
+				cart.map((product) => {
+					return product.id === items.id
+						? { ...product, quantity: product.quantity + quantity }
+						: product;
+				}),
+			);
+		} else {
+			setCart([...cart, { ...items, quantity }]);
+		}
+	};
+    console.log("Array Carrito", cart)
 
     return (
         <CartContext.Provider value={{
             clearCart,
             isInCart,
             removeProduct,
-            addProduct
+            addProduct,
+            cart
         }}>
             {children}
         </CartContext.Provider>
@@ -30,3 +37,18 @@ const CartProvider = ({ children }) => {
 }
 
 export default CartProvider
+
+
+/*     const addProduct = (items, quantity) => {
+        let newCart;
+        let product = cart.find(product => product.id === items.id);
+        if (product) {
+        product.quantity += quantity;
+        newCart = [...cart];
+        } else {
+        product = { ...items, quantity: quantity };
+        newCart = [...cart, product];
+        
+        setCart(newCart);
+        }
+    } */

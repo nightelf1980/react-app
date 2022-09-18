@@ -13,7 +13,7 @@ const ItemListsContainer = () => {
             new Promise((response, reject) => {
                 setTimeout(() => {
                 response(productos);
-                }, 2000);
+                }, 1000);
         });
 
             getProductos()
@@ -39,7 +39,6 @@ const ItemListsContainer = () => {
 
         <div className="container">
             <ItemList items={items} />
-            
         </div>
     )
 }

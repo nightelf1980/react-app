@@ -1,12 +1,13 @@
 import React from "react";
 import Item from "../Item/Item";
 
-const ItemList = ({items}) => {
+const ItemList = ({items = []}) => {
     return (
         <div className="row">
             {items.map(item => (
-                <div key={item.id} className="col-md-3 py-3">
-                    <Item id={item.id} titulo={item.title} descripcion={item.description} precio={"Precio: $ " + item.price} imagen={item.image} categoria={item.category}/>
+                <div className="col-md-3 py-3" key={item.id}>
+{/*                     <Item id={item.id} titulo={item.title} descripcion={item.description} precio={"Precio: $ " + item.price} imagen={item.image} categoria={item.category}/> */}
+                    <Item items={item}/>
                 </div>)
             )}
         </div>
