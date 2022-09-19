@@ -15,7 +15,7 @@ const CartProvider = ({ children }) => {
 					return product.id === items.id
 						? { ...product, quantity: product.quantity + quantity }
 						: product;
-				}),
+				})
 			);
 		} else {
 			setCart([...cart, { ...items, quantity}]);
@@ -28,8 +28,7 @@ const CartProvider = ({ children }) => {
             clear,
             isInCart,
             removeItem,
-            addItem,
-            cart
+            addItem
         }}>
             {children}
         </CartContext.Provider>

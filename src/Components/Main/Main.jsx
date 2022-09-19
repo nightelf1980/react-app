@@ -3,11 +3,11 @@ import React from "react";
 const Main = () => {
     return (
         <main>
-            <div class="container-fluid py-3">
+            <div className="container-fluid py-3">
                 {/* CAROUSEL */}
-                <div class="container">
-                    <div class="row">
-                        <div class="text">
+                <div className="container">
+                    <div className="row">
+                        <div className="text">
                             <h2>Cactus y Suculentas</h2>
                             <p>Se dice de los cactus que son plantas todoterreno que, prácticamente no necesitan cuidados. Apenas hay que regarlas y su crecimiento es lento y pausado, por lo que no requieren de trasplantes ni otras atenciones.</p>
                             <p>Esa creencia de que los cactus son plantas que no necesitan nada de nosotros no es del todo cierta. La realidad es que requieren atenciones distintas al resto.</p>
@@ -21,52 +21,52 @@ const Main = () => {
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="tarjetas d-flex justify-content-center">
-                        <div class="row col-md-10">
-                            <div class="col-md-6 py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../img/principalCard/cactusCard.jpg" class="card-img-top" alt="Cactus" />
-                                        <h5 class="card-title text-center py-1">Cactus</h5>
-                                        <p class="card-title text-center">Las cactáceas, son conocidas en conjunto como cactos, cactus o cacti</p>
+                <div className="container">
+                    <div className="tarjetas d-flex justify-content-center">
+                        <div className="row col-md-10">
+                            <div className="col-md-6 py-3">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <img src="../../img/principalCard/cactusCard.jpg" className="card-img-top" alt="Cactus" />
+                                        <h5 className="card-title text-center py-1">Cactus</h5>
+                                        <p className="card-title text-center">Las cactáceas, son conocidas en conjunto como cactos, cactus o cacti</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../img/principalCard/suculentasCard.jpg" class="card-img-top" alt="Suculentas" />
-                                        <h5 class="card-title text-center py-1">Suculentas</h5>
-                                        <p class="card-title text-center">La palabra 'Suculenta' viene del latín succulentus, que significa: 'jugoso'</p>
+                            <div className="col-md-6 py-3">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <img src="../../img/principalCard/suculentasCard.jpg" className="card-img-top" alt="Suculentas" />
+                                        <h5 className="card-title text-center py-1">Suculentas</h5>
+                                        <p className="card-title text-center">La palabra 'Suculenta' viene del latín succulentus, que significa: 'jugoso'</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="text">
-                            <h2 class="text-center">Productos a la venta</h2>
+                    <div className="row">
+                        <div className="text">
+                            <h2 className="text-center">Productos a la venta</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="d-flex justify-content-center">
-                            <div class="row col-md-10">
-                                <div class="col-md-6 py-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <img src="../../img/principalCard/interioryexteriorCard.jpg" class="card-img-top" alt="Productos a la venta" />
-                                            <h5 class="card-title text-center py-1">Productos a la venta</h5>
-                                            <p class="card-title text-center">Hermosas plantas tanto de interior como de exterior.</p>
+                    <div className="row">
+                        <div className="d-flex justify-content-center">
+                            <div className="row col-md-10">
+                                <div className="col-md-6 py-3">
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <img src="../../img/principalCard/interioryexteriorCard.jpg" className="card-img-top" alt="Productos a la venta" />
+                                            <h5 className="card-title text-center py-1">Productos a la venta</h5>
+                                            <p className="card-title text-center">Hermosas plantas tanto de interior como de exterior.</p>
                                         </div>
                                     </div>
                                 </div>
-                            <div class="col-md-6 py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="../../img/principalCard/sustratosCard.jpg" class="card-img-top" alt="Sustratos" />
-                                            <h5 class="card-title text-center py-1">Sustratos</h5>
-                                            <p class="card-title text-center">Tierra de hoja y sustratos para suculentas y plantas de interior</p></div>
+                            <div className="col-md-6 py-3">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <img src="../../img/principalCard/sustratosCard.jpg" className="card-img-top" alt="Sustratos" />
+                                            <h5 className="card-title text-center py-1">Sustratos</h5>
+                                            <p className="card-title text-center">Tierra de hoja y sustratos para suculentas y plantas de interior</p></div>
                                     </div>
                                 </div>
                             </div>

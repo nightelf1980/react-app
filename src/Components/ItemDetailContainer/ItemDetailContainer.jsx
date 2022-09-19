@@ -5,18 +5,18 @@ import { useParams } from 'react-router-dom';
 import { productos } from "../../Database/Productos";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
-const ItemDetailContainer = () => {
+export const ItemDetailContainer = () => {
     const [items, setItem] = useState([])
     const [loading, setLoading] = useState(true)
     const {detalleId} = useParams();
 
-    const getProductos = (id) => {
+    const getProductos = () => {
         return new Promise ((response, reject) => {
             
             setTimeout(() => {
-                const producto = productos.find(items=>items.id === parseInt(detalleId));
+                const producto = productos.find(item=>item.id === parseInt(detalleId));
                 response(producto)
-    }, 1000)
+    }, 200)
 
 
 })}
@@ -31,12 +31,12 @@ const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-        const getProducto = async() =>{
-            const detalle = await getProductos();
-            setItem(detalle)
+        const getProductos = async() =>{
+            const detalleId = await getProductos();
+            setItem(detalleId)
 
         }
-        getProducto();
+        getProductos();
     },[detalleId])
 
 

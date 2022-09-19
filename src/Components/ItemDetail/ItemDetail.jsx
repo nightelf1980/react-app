@@ -4,7 +4,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import { useCartContext } from "../../context/CartContext";
 import '../ItemDetail/ItemDetail.css'
 
-const ItemDetail = ({items}) => {
+export const ItemDetail = ({items}) => {
     let numeroPrecio = parseFloat(items.price);
     let qStock = "";
     if (items.stock > 0) {
@@ -13,7 +13,7 @@ const ItemDetail = ({items}) => {
         qStock = "Sin stock";
     }
 
-    const [Cart, setCart] = useState(false)
+    const [cart, setCart] = useState(false)
     const {addItem} = useCartContext()
 
     const onAdd = (quantity) => {
@@ -22,7 +22,7 @@ const ItemDetail = ({items}) => {
     }
 
     const fav = () => {
-        let contenido = `<i class="fa-solid fa-heart fa-lg"></i>`
+        let contenido = `<i className="fa-solid fa-heart fa-lg"></i>`
         document.getElementById("fav").innerHTML = contenido
     }
 
@@ -46,14 +46,14 @@ const ItemDetail = ({items}) => {
                         </div>
                         <div>
                             {
-                                Cart
+                                cart
                                 ? <div>
-                                <ItemCount initial={1} stock ={items.stock} onAdd={onAdd}/>
+                                    <ItemCount initial={1} stock ={items.stock} onAdd={onAdd}/>
                                     <Link to="/pages/cart">
-                                    <div className="card-body text-center">
-                                        <button className='btn btn-success'>Finalizar Compra</button>
-                                    </div>
-                                </Link>
+                                        <div className="card-body text-center">
+                                            <button className='btn btn-success'>Finalizar Compra</button>
+                                        </div>
+                                    </Link>
                                 </div>
                                 : <ItemCount initial={1} stock ={items.stock} onAdd={onAdd}/>
                             }
@@ -65,11 +65,8 @@ const ItemDetail = ({items}) => {
                             <p className="card-text">{items.description}</p>
                         </div>
                         <div className="card-body row col-md-12">
-                            <div className="col-md-5 offset-md-1 text-center">
+                            <div className="col-md-6 offset-md-3 text-center">
                                 <button className='btn btn-secondary button-back'><a href="/pages/catalogo">Volver al catálogo</a></button>
-                            </div>
-                            <div className="col-md-5 offset-md-1 text-center">
-                                <button className='btn btn-warning button-back'><a href={items.id + 1} >Siguiente producto</a></button>
                             </div>
                         </div>
                     </div>

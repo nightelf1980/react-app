@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Footer.css'
 
 
 const Footer = () => {
     return (
-    <footer className="text-center text-lg-start text-dark mt-5">
+    <div className="text-center text-lg-start text-dark mt-5 footer">
         <div className="container pb-0">
             <div>
                 <div className="row">
@@ -18,16 +19,16 @@ const Footer = () => {
                     {/* COLUMNA */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Productos a la venta</h6>
-                        <p><a className="text-dark" href="/pages/catalogo">Catálogo de productos</a></p>
+                        <p><Link className="text-dark" href="/pages/catalogo">Catálogo de productos</Link></p>
                     </div>
                     {/* COLUMNA */}
                     <hr className="w-100 clearfix d-md-none" />
                     {/* COLUMNA */}
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Links a otros sitios de interés</h6>
-                        <p><a className="text-dark" href="https://www.consultaplantas.com" target="_blank" rel="noreferrer">Catálogo mundial de plantas</a></p>
-                        <p><a className="text-dark" href="https://fundacionphilippi.cl/catalogo/" target="_blank" rel="noreferrer">Catálogo de plantas silvestres en Chile</a></p>
-                        <p><a className="text-dark" href="https://www.nationalgeographicla.com/" target="_blank" rel="noreferrer">National Geographic</a></p>
+                        <p><Link className="text-dark" href="https://www.consultaplantas.com" target="_blank" rel="noreferrer">Catálogo mundial de plantas</Link></p>
+                        <p><Link className="text-dark" href="https://fundacionphilippi.cl/catalogo/" target="_blank" rel="noreferrer">Catálogo de plantas silvestres en Chile</Link></p>
+                        <p><Link className="text-dark" href="https://www.nationalgeographicla.com/" target="_blank" rel="noreferrer">National Geographic</Link></p>
                     </div>
                     {/* COLUMNA */}
                     <hr className="w-100 clearfix d-md-none" />
@@ -48,22 +49,22 @@ const Footer = () => {
                     {/* COLUMNA */}
                     <div className="col-md-7 col-lg-8 text-center text-md-start">
                         {/* COPYRIGHT */}
-                        <div className="p-3">© 2022 Copyright: <href className="text-dark">Jardinería Artemis</href></div>
+                        <div className="p-3">© 2022 Copyright: <Link href="" className="text-dark">Jardinería Artemis</Link></div>
                     </div>
                     {/* SOCIAL NETWORKS COLUMN */}
                     <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
                         <p>Síguenos en Redes Sociales</p>
                         {/* FACEBOOK */}
-                        <a className="btn btn-floating m-1 text-primary" role="button" href="/"><i className="fab fa-facebook"></i></a>
+                        <Link className="btn btn-floating m-1 text-primary" role="button" href="/"><i className="fab fa-facebook"></i></Link>
                         {/* WHATSAPP */}
-                        <a className="btn btn-floating m-1 text-success" role="button" href="https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></a>
+                        <Link className="btn btn-floating m-1 text-success" role="button" href="https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></Link>
                         {/* INSTAGRAM */}
-                        <a className="btn btn-floating m-1 text-danger" role="button" href="https://www.instagram.com/jardineria_artemis/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                        <Link className="btn btn-floating m-1 text-danger" role="button" href="https://www.instagram.com/jardineria_artemis/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></Link>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 
     )
 }
