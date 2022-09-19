@@ -11,7 +11,6 @@ const NavigationBar = () => {
     {id: 1, name: "NOSOTROS", path: "/pages/nosotros"},
     {id: 2, name: "SERVICIOS", path: "/pages/servicios"},
     {id: 3, name: "CATÁLOGO", path: "/pages/catalogo"}
-
 ]
 
   const subMenuItems = [
