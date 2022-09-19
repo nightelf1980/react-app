@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/src/Backup
+./src/Backup
 /.pnp
 .pnp.js
 
