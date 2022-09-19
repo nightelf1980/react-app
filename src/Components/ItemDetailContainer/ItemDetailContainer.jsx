@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from 'react-router-dom';
 import { productos } from "../../Database/Productos";
@@ -27,17 +26,6 @@ export const ItemDetailContainer = () => {
                     console.log(error)
                 })
                 .finally(() => setLoading(false))
-
-
-    useEffect(() => {
-        const getProductos = async() =>{
-            const detalleId = await getProductos();
-            setItem(detalleId)
-
-        }
-        getProductos();
-    },[detalleId])
-
 
     return (
         loading ? 
