@@ -11,6 +11,7 @@ import Cart from './pages/Cart/Cart'
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CartProvider from './context/CartContext';
+import Notfound from './Components/Notfound/Notfound';
 
 function App () {
   return (
@@ -21,16 +22,17 @@ function App () {
           <Title />
           <Routes>
             <Route exact path="/" element={<Inicio />} />
-            <Route path="/pages/servicios" element={<Servicios />} />
-            <Route path="/pages/catalogo" element={<ItemListContainer />} />
-            <Route path="/pages/categoria" element={<ItemListContainer />} />
-            <Route path="/pages/nosotros" element={<Nosotros />} />
+            <Route exact path="/pages/servicios" element={<Servicios />} />
+            <Route exact path="/pages/catalogo" element={<ItemListContainer />} />
+            <Route exact path="/pages/categoria" element={<ItemListContainer />} />
+            <Route exact path="/pages/nosotros" element={<Nosotros />} />
             <Route path='/pages/catalogo/:detalleId' element={<ItemDetailContainer />} />
             <Route path='/pages/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path="/pages/cart" element ={<Cart />} />
+            <Route path="*" element ={<Notfound />} />
           </Routes>
+          <Footer />
         </CartProvider>
-        <Footer />
       </BrowserRouter>  
     </>
   );

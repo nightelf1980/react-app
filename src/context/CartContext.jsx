@@ -18,7 +18,7 @@ const CartProvider = ({ children }) => {
 				})
 			);
 		} else {
-			setCart([...cart, { ...items, quantity}]);
+			setCart([...cart, { ...items, quantity:quantity}]);
 		}
 	};
     console.log("Array Carrito", cart)
@@ -28,7 +28,8 @@ const CartProvider = ({ children }) => {
             clear,
             isInCart,
             removeItem,
-            addItem
+            addItem, 
+            cart
         }}>
             {children}
         </CartContext.Provider>
