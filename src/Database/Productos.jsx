@@ -4,7 +4,8 @@ export const productos = [
         title:"Agave Attenuata",
         price:"4550",
         description:"Agave attenuata, comúnmente llamada ágave atenuado, ágave del dragón o cuello de cisne, es una especie suculenta perteneciente a la familia de las agaváceas. Sus tallos alcanzan los 50 a 150 cm de longitud, eventualmente sus hojas viejas caen dejándolo desnudo y visible. Las hojas son ovadas, acuminadas de 70 cm de longitud y 12-16 cm de ancho, de color gris a amarillo-verdoso, pálidas y sin espinas. La inflorescencia es un racimo denso de 2,5 a 3 metros de altura, con flores de color amarillo-verdoso.",
-        image:"agaveattenuata.jpg",
+        /* image:"1D0AXqyV0Uqn_QsIAb0ho4j6Y-GSyHgus", */
+        image: "agaveattenuata.jpg",
         stock: 7,
         category:1
     },
@@ -13,7 +14,8 @@ export const productos = [
         title:"Alegria Nueva Guinea",
         price:"3580",
         description:"Es una planta originaria de Nueva Guinea de tallos carnosos con hojas de color verde claro. Las flores varían mucho debido a la gran cantidad de variedades que hay. La Alegría guineana debe cultivarse en exposiciones con claridad pero sin sol directo o en semisombra. Son sensibles al frío por lo que se cultivan como planta de temporada.",
-        image:"alegrianuevaguinea.jpg",
+        /* image:"1fhFLY5P1bd8CpViZdlbyO-ordyuY2YM2", */
+        image: "alegrianuevaguinea.jpg",
         stock: 0,
         category:1
     },
@@ -22,7 +24,8 @@ export const productos = [
         title:"Aloe Vera", 
         price:"5510", 
         description:"Aloe vera, llamado sábila, acíbar o áloe de Barbados, entre otros, es una especie suculenta de la familia Asphodelaceae. Es una planta de hoja perenne, probablemente se originó en la Península Arábica, pero crece de forma silvestre en climas tropicales, semitropicales y áridos de todo el mundo. Se cultiva para productos comerciales, principalmente como tratamiento tópico utilizado durante siglos. La especie es atractiva con fines decorativos y tiene éxito en interiores como planta de maceta.", 
-        image:"aloevera.jpg",
+        /* image:"1zqECnBVCQM9Vp4D4OxRhLnbtwT2EfMAO", */
+        image: "aloevera.jpg",
         stock: 17, 
         category:1
     },

@@ -2,7 +2,7 @@ import React from "react";
 
 const Servicios = () => {
     return (
-        <h1>Servicios</h1>
+        <h2 className="text-center">Servicios</h2>
     )
 }
 

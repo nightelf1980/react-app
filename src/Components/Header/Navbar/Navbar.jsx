@@ -4,6 +4,7 @@ import logo from "../../../assets/img/artemis-logo-color.png";
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
 
@@ -24,11 +25,11 @@ const NavigationBar = () => {
     <>
       <Navbar className="container-fluid row d-flex bg-light justify-content-center" bg="light" variant="light">
         <Container className="navbar navbar-expand-lg navbar-light col-md-11">
-          <Navbar.Brand href="/"><img className="animate__animated animate__fadeIn" src={logo} alt="logo" width="100px" /></Navbar.Brand>
+          <Link to="/"><img className="animate__animated animate__fadeIn navbar-brand" src={logo} alt="logo" width="100px" /></Link>
           <Nav className="me-auto">
-            {menuItems.map(item => <Nav.Link key={item.id} href={item.path}>{item.name}</Nav.Link>)}
+            {menuItems.map(item => <Link key={item.id} className="nav-link" to={item.path}>{item.name}</Link>)}
             <NavDropdown title="CATEGORIAS" id="basic-nav-dropdown">
-              {subMenuItems.map(subItem => <NavDropdown.Item key={subItem.id} href={subItem.path}>{subItem.name}</NavDropdown.Item>)}
+              {subMenuItems.map(subItem => <Link key={subItem.id} className="dropdown-item" to={subItem.path}>{subItem.name}</Link>)}
             </NavDropdown>
           </Nav>
         </Container>

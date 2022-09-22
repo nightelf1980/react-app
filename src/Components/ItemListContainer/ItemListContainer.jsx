@@ -22,6 +22,7 @@ export const ItemListContainer = () => {
    
     return (
         <div className="container">
+            <h2 className="text-center">Catálogo de productos</h2>
             <ItemList items={items} />
         </div>
     )

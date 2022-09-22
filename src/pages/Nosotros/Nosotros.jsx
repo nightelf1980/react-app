@@ -2,7 +2,7 @@ import React from "react";
 
 const Nosotros = () => {
     return (
-        <h1>Nosotros</h1>
+        <h2 className="text-center">Nosotros</h2>
     )
 }
 

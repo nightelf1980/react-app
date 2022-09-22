@@ -11,13 +11,13 @@ import Cart from './pages/Cart/Cart'
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CartProvider from './context/CartContext';
-import Notfound from './Components/NotFound/NotFound';
+import NotFound from './Components/NotFound/NotFound';
 
 function App () {
   return (
     <>
-      <BrowserRouter>
         <CartProvider>
+        <BrowserRouter>
           <Navbar />
           <Title />
           <Routes>
@@ -29,11 +29,12 @@ function App () {
             <Route path='/pages/catalogo/:detalleId' element={<ItemDetailContainer />} />
             <Route path='/pages/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path="/pages/cart" element ={<Cart />} />
-            <Route path="*" element ={<Notound />} />
+            <Route path="*" element ={<NotFound />} />
           </Routes>
           <Footer />
+          </BrowserRouter> 
         </CartProvider>
-      </BrowserRouter>  
+       
     </>
   );
 }

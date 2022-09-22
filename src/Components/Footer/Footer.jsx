@@ -19,16 +19,16 @@ const Footer = () => {
                     {/* COLUMNA */}
                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Productos a la venta</h6>
-                        <p><Link className="text-dark" href="/pages/catalogo">Catálogo de productos</Link></p>
+                        <p><Link className="text-dark" to="/pages/catalogo">Catálogo de productos</Link></p>
                     </div>
                     {/* COLUMNA */}
                     <hr className="w-100 clearfix d-md-none" />
                     {/* COLUMNA */}
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 className="text-uppercase mb-4 font-weight-bold">Links a otros sitios de interés</h6>
-                        <p><Link className="text-dark" href="https://www.consultaplantas.com" target="_blank" rel="noreferrer">Catálogo mundial de plantas</Link></p>
-                        <p><Link className="text-dark" href="https://fundacionphilippi.cl/catalogo/" target="_blank" rel="noreferrer">Catálogo de plantas silvestres en Chile</Link></p>
-                        <p><Link className="text-dark" href="https://www.nationalgeographicla.com/" target="_blank" rel="noreferrer">National Geographic</Link></p>
+                        <p><Link className="text-dark" to="https://www.consultaplantas.com" target="_blank" rel="noreferrer">Catálogo mundial de plantas</Link></p>
+                        <p><Link className="text-dark" to="https://fundacionphilippi.cl/catalogo/" target="_blank" rel="noreferrer">Catálogo de plantas silvestres en Chile</Link></p>
+                        <p><Link className="text-dark" to="https://www.nationalgeographicla.com/" target="_blank" rel="noreferrer">National Geographic</Link></p>
                     </div>
                     {/* COLUMNA */}
                     <hr className="w-100 clearfix d-md-none" />
@@ -49,17 +49,17 @@ const Footer = () => {
                     {/* COLUMNA */}
                     <div className="col-md-7 col-lg-8 text-center text-md-start">
                         {/* COPYRIGHT */}
-                        <div className="p-3">© 2022 Copyright: <Link href="" className="text-dark">Jardinería Artemis</Link></div>
+                        <div className="p-3">© 2022 Copyright: <Link to="/" className="text-dark">Jardinería Artemis</Link></div>
                     </div>
                     {/* SOCIAL NETWORKS COLUMN */}
                     <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
                         <p>Síguenos en Redes Sociales</p>
                         {/* FACEBOOK */}
-                        <Link className="btn btn-floating m-1 text-primary" role="button" href="/"><i className="fab fa-facebook"></i></Link>
+                        <Link className="btn btn-floating m-1 text-primary" role="button" to="*"><i className="fab fa-facebook"></i></Link>
                         {/* WHATSAPP */}
-                        <Link className="btn btn-floating m-1 text-success" role="button" href="https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></Link>
+                        <Link className="btn btn-floating m-1 text-success" role="button" to={{ pathname: "https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n."}} target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></Link>
                         {/* INSTAGRAM */}
-                        <Link className="btn btn-floating m-1 text-danger" role="button" href="https://www.instagram.com/jardineria_artemis/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></Link>
+                        <Link className="btn btn-floating m-1 text-danger" role="button" to={{ pathname: "https://www.instagram.com/jardineria_artemis"}} target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></Link>
                     </div>
                 </div>
             </div>
