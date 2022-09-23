@@ -1,0 +1,9 @@
+.img-cart img {
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px #0c053e10;
+}
+
+.img-cart :hover {
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px #0c053e30;
+}

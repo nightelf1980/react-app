@@ -1,6 +1,7 @@
 import React , { useEffect , useState } from "react";
 import { useParams } from 'react-router-dom';
 import { productos } from "../../Database/Productos";
+import CategoryNavbar from "../Header/CategoryNavbar/CategoryNavbar";
 import ItemList from "../ItemList/ItemList"
 
 export const ItemListContainer = () => {
@@ -23,6 +24,9 @@ export const ItemListContainer = () => {
     return (
         <div className="container">
             <h2 className="text-center">Catálogo de productos</h2>
+            <div>
+                <CategoryNavbar />
+            </div>
             <ItemList items={items} />
         </div>
     )

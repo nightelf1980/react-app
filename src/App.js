@@ -12,6 +12,7 @@ import Footer from './Components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CartProvider from './context/CartContext';
 import NotFound from './Components/NotFound/NotFound';
+import CategoryNavbar from './Components/Header/CategoryNavbar/CategoryNavbar';
 
 function App () {
   return (

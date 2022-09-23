@@ -30,10 +30,10 @@ export const ItemDetail = ({items}) => {
         <div className="row col-md-10 offset-md-1">
             <div className="card">
                 <div className="row">
-                    <div className="col-md-5 p-5">
+                    <div className="col-md-4 col-sm-4 p-5">
                         <img src={"../../img/products/" + items.image} className="card-img-top" alt={items.title} title={items.title}/>
                     </div>
-                    <div className="col-md-7 p-4">
+                    <div className="col-md-8 col-sm-8 p-4">
                         <div className="card-body row d-flex">
                             <div className="col-md-11">
                                 <h2 className="card-title col-md-11">{items.title}</h2>
