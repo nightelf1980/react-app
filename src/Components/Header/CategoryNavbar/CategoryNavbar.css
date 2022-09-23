@@ -5,4 +5,9 @@
 .category-labels img {
     width: 80px;
     border-radius: 50%;
+    box-shadow: 0px 5px 5px #0c053e20;
+}
+
+.category-labels :hover {
+    box-shadow: 0px 5px 5px #0c053e40;
 }

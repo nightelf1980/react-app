@@ -15,10 +15,10 @@ const CategoryNavbar = () => {
 
   return (
     <>
-      <Navbar className="container-fluid row d-flex justify-content-center align-items-center">
-        <Container className="navbar navbar-expand-lg navbar-light col-md-11 justify-content-center align-items-center">
-            <Nav className="me-auto">
-                {subMenuItems.map(item => <Link key={item.id} className="nav-link justify-content-center align-items-center category-labels" to={item.path}><img src={"../../img/" + item.image} className="card-img-top" alt={item.title} title={item.title}/></Link>)}
+      <Navbar className="container-fluid row d-flex justify-content-center">
+        <Container className="navbar navbar-expand-lg navbar-light">
+            <Nav className="mx-auto">
+                {subMenuItems.map(item => <Link key={item.id} className="nav-link category-labels" to={item.path}><img src={"../../img/" + item.image} className="card-img-top" alt={item.title} title={item.title}/></Link>)}
             </Nav>
         </Container>
       </Navbar>
