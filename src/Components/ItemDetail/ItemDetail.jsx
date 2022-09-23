@@ -66,7 +66,7 @@ export const ItemDetail = ({items}) => {
                         </div>
                         <div className="card-body row col-md-12">
                             <div className="col-md-6 offset-md-3 text-center">
-                                <button className='btn btn-secondary button-back'><a href="/pages/catalogo">Volver al catálogo</a></button>
+                                <button className='btn btn-secondary button-back'><Link to="/pages/catalogo">Volver al catálogo</Link></button>
                             </div>
                         </div>
                     </div>
