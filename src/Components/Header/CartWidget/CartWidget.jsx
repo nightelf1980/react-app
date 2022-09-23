@@ -9,7 +9,7 @@ const CartWidget = () => {
             <Link to="/pages/cart" title="Ir al carro">
                 <button type="button" className="btn btn-success position-relative">
                 <i className="fa-solid fa-cart-shopping" />
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{totalProducts()}</span>
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{totalProducts() || ''}</span>
                 </button>
             </Link>
         </div>
