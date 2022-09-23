@@ -6,7 +6,7 @@ Plantas de interior y exterior, cactus y suculentas, tierra de hoja y sustratos,
 
 ## Authors
 
-- [@nightelf1980](https://www.github.com/octokatherine)
+- [@nightelf1980](https://www.github.com/nightelf1980/)
 
 
 ## 🚀 About Me
