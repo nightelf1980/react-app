@@ -9,8 +9,8 @@ const Checkout = () => {
     return (
         <>
             {
-                <div className="row">
-                    <div className="container col-md-8 text-center">
+                <div className="container d-flex">
+                    <div className="col-md-8 text-center">
                         <table className="table">
                             <thead>
                                 <tr>
@@ -34,23 +34,29 @@ const Checkout = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr className="alert" role="alert">
                                 <td>Cantidad de productos</td>
-                                <td>{totalProducts()}</td>
+                                <td><b>{totalProducts()}</b></td>
                             </tr>
-                            <tr>
+                            <tr className="alert" role="alert">
+                                <td>Total</td>
+                                <td><b>$ {(totalPrice()).toFixed(0)}</b></td>
+                            </tr>
+                            <tr className="alert" role="alert">
+                                <td>IVA 19%</td>
+                                <td><b>$ {(totalPrice() * 0.19).toFixed(0)}</b></td>
+                            </tr>
+                            <tr className="alert alert-success" role="alert">
                                 <td>Total a pagar</td>
-                                <td>$ {totalPrice()}</td>
+                                <td><b>$ {(totalPrice() * 1.19).toFixed(0)}</b></td>
                             </tr>
-                            <tr>
+                            <tr className="alert" role="alert">
                                 <td colSpan={2}><button type="button" className="btn btn-success"><a className="btn btn-success" href="https://www.webpay.cl">Pagar</a></button></td>
                             </tr>
                         </tbody>
                     </table>
                     </div>
                 </div>
-
-
             }
         </>
     )

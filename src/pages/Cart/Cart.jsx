@@ -43,16 +43,6 @@ const Cart = () => {
                                 <td className="text-center" ><b>$ {totalPrice()}</b></td>
                                 <td className="text-center"></td>
                             </tr>
-                            <tr className="alert" role="alert">
-                                <td className="text-center" colSpan={4}><b>IVA (19%)</b></td>
-                                <td className="text-center" ><b>$ {(totalPrice() * 0.19).toFixed(0)}</b></td>
-                                <td className="text-center"></td>
-                            </tr>
-                            <tr className="alert alert-success" role="alert">
-                                <td className="text-center" colSpan={4}><b>Total a pagar</b></td>
-                                <td className="text-center" ><b>$ {(totalPrice() * 1.19).toFixed(0)}</b></td>
-                                <td className="text-center"></td>
-                            </tr>
                         </tfoot>
                     </table>
                     <div className="row">
