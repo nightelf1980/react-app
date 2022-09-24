@@ -1,7 +1,5 @@
-import React, {useEffect, useState, useContext} from 'react';
+import React, {useEffect, useState} from 'react';
 import './ItemCount.css';
-
-export const useItemCount= () => useContext (ItemCount)
 
 const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] = useState(parseInt(initial));
@@ -20,9 +18,9 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     return (
         <div className="counter">
-            <button className='btn m-2' disabled={count <= 1} onClick={decrease}><img src="/img/decrease.png" width="15" title="Disminuir" alt=""/></button>
+            <button className='btn m-2' disabled={count <= 1} onClick={decrease}><img src="/img/decrease.png" width="15" title="Disminuir" alt="Disminuir cantidad"/></button>
             <span>{count}</span>
-            <button className='btn m-2' disabled={count >= stock} onClick={increase}><img src="/img/increase.png" width="15" title="Aumentar" alt=""/></button>
+            <button className='btn m-2' disabled={count >= stock} onClick={increase}><img src="/img/increase.png" width="15" title="Aumentar" alt="Aumentar cantidad"/></button>
             <div className='py-2'>
                 <button className='btn btn-shop-primary' disabled={stock <= 0} onClick={() => onAdd(count)}>Comprar Ahora</button>
             </div>
