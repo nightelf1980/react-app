@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../NotFound/NotFound.css'
+import '../Error404/Error404.css'
 
-const NotFound = () => {
+const Error404 = () => {
     return (
         <div id="notfound">
             <div class="notfound">
@@ -18,4 +18,4 @@ const NotFound = () => {
     )
 }
 
-export default NotFound
+export default Error404
