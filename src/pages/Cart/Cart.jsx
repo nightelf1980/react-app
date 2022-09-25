@@ -4,17 +4,21 @@ import ItemCart from "../../Components/ItemCart/ItemCart";
 import { useCartContext } from "../../context/CartContext"
 
 const Cart = () => {
-    const carroVacio = false;
+/*     const carroVacio = false; */
     const {cart, totalPrice, clearCart} = useCartContext()
     if (cart.length === 0) {
-        const carroVacio = true;
-        console.log("Carro vacío: ", carroVacio)
-        console.log(cart.length)
+/*         const carroVacio = true; */
         return (
             <div className="container text-center">
                 <h2>Carro de compras</h2>
                 <p className="alert alert-warning text-center col-md-6 offset-md-3" role="alert">No hay productos seleccionados</p>
+                <div className="card-body row col-md-12">
+                    <div className="col-md-6 offset-md-3 text-center">
+                        <button className='btn btn-secondary button-back'><Link to="/pages/catalogo">Ir al catálogo</Link></button>
+                    </div>
+                </div>
             </div>
+
         )
     }
 
