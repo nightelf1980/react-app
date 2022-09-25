@@ -18,8 +18,6 @@ const CartProvider = ({ children }) => {
         cart.splice(position,1)
     } */
 
-
-
     const addItem = (items, quantity) => {
         if (isInCart(items.id)) {
             setCart(cart.map(product => {
@@ -28,6 +26,10 @@ const CartProvider = ({ children }) => {
         } else {
             setCart([...cart, {...items, quantity}]);
         }
+    }
+
+    const deleteItem = () => {
+        
     }
 
 
