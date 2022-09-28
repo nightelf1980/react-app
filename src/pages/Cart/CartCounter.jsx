@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react'
 import { useCartContext } from "../../context/CartContext"
 
-export default function CartCounter({ inicialValue, product }) {
+export default function CartCounter({ inicialValue, product, maxStock }) {
 
     const [contador, setContador] = useState(0);
-    const { handleQuantity  } = useCartContext();
+    const { handleQuantity } = useCartContext();
     const addToCounter = () => {
-      if (contador < 10) {
+      if (contador < maxStock) {
         setContador((prevContador) => {
           let contador = prevContador + 1;
           handleQuantity(product, contador);
