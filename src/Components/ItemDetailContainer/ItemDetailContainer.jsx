@@ -1,10 +1,10 @@
-import React from "react";
-import { useState } from "react";
+import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import { productos } from "../../Database/Productos";
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
+/* import { productos } from "../../Database/Productos"; */
 import ItemDetail from "../ItemDetail/ItemDetail";
 
-export const ItemDetailContainer = () => {
+/* export const ItemDetailContainer = () => {
     const [items, setItem] = useState([])
     const [loading, setLoading] = useState(true)
     const {detalleId} = useParams();
@@ -25,21 +25,32 @@ export const ItemDetailContainer = () => {
                 .catch((error) => {
                     console.log(error)
                 })
-                .finally(() => setLoading(false))
+                .finally(() => setLoading(false)) */
+
+    export const ItemDetailContainer = () => {
+        const [items, setItems] = useState({});
+        const {detalleId} = useParams();
+    
+        useEffect(() => {
+            const querydb = getFirestore();
+            const queryDoc = doc(querydb, 'items', 
+            detalleId);
+            getDoc(queryDoc)
+            .then(res => setItems({id: res.id, ...res.data()}))
+        }, [detalleId])
 
     return (
-        loading ? 
+/*         loading ? 
         <div className="col-md-12 text-center">
             <div className="spinner-border text-success" role="status">
                 <span className="visually-hidden"></span>
             </div>
         </div>
 
-        :
-
-        <div>
+        : */
+        <>
             <ItemDetail items={items}/>
-        </div>
+        </>
     )
 }
 

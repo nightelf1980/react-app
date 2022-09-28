@@ -11,7 +11,7 @@ const ItemCart = ({ product }) => {
 
     return (
         <tr>
-            <td className="align-middle text-center img-cart"><Link to={"/pages/catalogo/" + product.id}><img src={"../../img/products/" + product.image} width="100px" alt={product.title} title={product.title}/></Link></td>
+            <td className="align-middle text-center img-cart"><Link to={"/pages/catalogo/" + product.id}><img src={"http://drive.google.com/uc?export=view&id=" + product.image} width="100px" alt={product.title} title={product.title}/></Link></td>
             <td className="align-middle text-center">{product.title}</td>
                 <CartCounter inicialValue={product.quantity} product={product} maxStock={product.stock}/>
             <td className="align-middle text-center">$ {product.price}</td>

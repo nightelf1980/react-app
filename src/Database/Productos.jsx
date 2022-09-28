@@ -42,7 +42,7 @@ export const productos = [
         id:5, 
         title:"Anthurium Coriaceum", 
         price:"4800", 
-        description:"¡Este anthurium es una planta tropical de grandes hojas que completará tus espacios y sorprenderá a tus visitas! Necesita estar en ambientes cálidos y húmedos, como su origen tropical de Brazil. Se dice que sus hojas pueden llegar a medir hasta 1 m de largo. Necesita de buena iluminación cuidando no exponer a sol directo. Riégala moderadamente, para evitar encharcamientos y posibles pudriciones.", 
+        description:"Este anthurium es una planta tropical de grandes hojas que completará tus espacios y sorprenderá a tus visitas! Necesita estar en ambientes cálidos y húmedos, como su origen tropical de Brazil. Se dice que sus hojas pueden llegar a medir hasta 1 m de largo. Necesita de buena iluminación cuidando no exponer a sol directo. Riégala moderadamente, para evitar encharcamientos y posibles pudriciones.", 
         image:"anthuriumcoriaceum.jpg", 
         stock: 10,
         category:1

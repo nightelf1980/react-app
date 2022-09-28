@@ -31,7 +31,7 @@ export const ItemDetail = ({items}) => {
             <div className="card">
                 <div className="row">
                     <div className="col-md-4 col-sm-4 p-5">
-                        <img src={"../../img/products/" + items.image} className="card-img-top" alt={items.title} title={items.title}/>
+                        <img src={"http://drive.google.com/uc?export=view&id=" + items.image} className="card-img-top" alt={items.title} title={items.title}/>
                     </div>
                     <div className="col-md-8 col-sm-8 p-4">
                         <div className="card-body row d-flex">
