@@ -26,7 +26,7 @@ const Summary = () => {
                     </tr>
                     <tr className="alert" role="alert">
                         <td>Despacho</td>
-                        <td><b>$ 3.900</b></td>
+                        <td><b>$ 3900</b></td>
                     </tr>
                     <tr className="alert alert-success" role="alert">
                         <td>Total a pagar</td>
