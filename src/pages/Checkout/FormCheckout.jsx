@@ -34,7 +34,7 @@ const FormCheckout = () => {
                 <div className="form-group col-md-6">
                     <label for="inputState">Región</label>
                     <select id="inputState" className="form-control">
-                        <option selected>Elije una Región</option>
+                        <option defaultValue>Elije una Región</option>
                         <option>Arica y Parinacota</option>
                         <option>Tarapacá</option>
                         <option>Antofagasta</option>

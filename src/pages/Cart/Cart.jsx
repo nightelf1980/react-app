@@ -5,10 +5,8 @@ import { useCartContext } from "../../context/CartContext"
 import "../Cart/Cart.css"
 
 const Cart = () => {
-/*     const carroVacio = false; */
     const {cart, totalPrice, clearCart} = useCartContext()
     if (cart.length === 0) {
-/*         const carroVacio = true; */
         return (
             <div className="container text-center">
                 <h2>Carro de compras</h2>
@@ -19,7 +17,6 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
-
         )
     }
 
@@ -60,8 +57,6 @@ const Cart = () => {
                             <button className="btn btn-shop-primary"><Link to="/pages/cart/checkout" className="boton">Finalizar Compra</Link></button>
                         </div>
                     </div>
-
-
                 </div>
             }
         </>

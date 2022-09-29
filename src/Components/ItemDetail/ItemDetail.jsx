@@ -21,11 +21,6 @@ export const ItemDetail = ({items}) => {
         addItem(items, quantity)
     }
 
-    const fav = () => {
-        let contenido = `<i className="fa-solid fa-heart fa-lg"></i>`
-        document.getElementById("fav").innerHTML = contenido
-    }
-
     return (
         <div className="row col-md-10 offset-md-1">
             <div className="card">
@@ -37,9 +32,6 @@ export const ItemDetail = ({items}) => {
                         <div className="card-body row d-flex">
                             <div className="col-md-11">
                                 <h2 className="card-title col-md-11">{items.title}</h2>
-                            </div>
-                            <div className="col-md-1 text-center text-primary" id="fav">
-                                <i className="fa-regular fa-heart fa-lg" onClick={() => fav()} />
                             </div>
                             <h5 className="card-text fw-bold">Precio: ${items.price}</h5>
                             <p className="text-success"><b>Llévalo en 6 cuotas de $ {(numeroPrecio /6).toFixed(0)} sin interés</b></p>
