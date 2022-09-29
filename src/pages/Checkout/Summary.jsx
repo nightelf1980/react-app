@@ -24,9 +24,13 @@ const Summary = () => {
                         <td>IVA 19%</td>
                         <td><b>$ {(totalPrice() * 0.19).toFixed(0)}</b></td>
                     </tr>
+                    <tr className="alert" role="alert">
+                        <td>Despacho</td>
+                        <td><b>$ 3.900</b></td>
+                    </tr>
                     <tr className="alert alert-success" role="alert">
                         <td>Total a pagar</td>
-                        <td><b>$ {(totalPrice() * 1.19).toFixed(0)}</b></td>
+                        <td><b>$ {((totalPrice() * 1.19) + 3900).toFixed(0)}</b></td>
                     </tr>
                 </tbody>
             </table>
