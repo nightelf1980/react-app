@@ -68,6 +68,7 @@ Install dependencies
   npm install
   npm install react-router-dom
   npm install bootstrap
+  npm install firebase
 ```
 
 Start the server
