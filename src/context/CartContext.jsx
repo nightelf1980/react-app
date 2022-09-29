@@ -35,6 +35,7 @@ const CartProvider = ({ children }) => {
       };
 
     console.log("Array Carrito", cart)
+    console.log(cart.length)
 
     return (
         <CartContext.Provider value={{

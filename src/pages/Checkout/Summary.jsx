@@ -2,7 +2,11 @@ import React from "react";
 import { useCartContext } from "../../context/CartContext"
 
 const Summary = () => {
-    const {totalPrice, totalProducts} = useCartContext()
+    const {cart, totalPrice, totalProducts} = useCartContext()
+    let costoEnvio = 0
+    if(cart.length != 0) {
+        costoEnvio = 3900
+    }
     return (
         <div className="container .col-md-4 .offset-md-4 text-center py-3">
             <table className="table">
@@ -26,11 +30,11 @@ const Summary = () => {
                     </tr>
                     <tr className="alert" role="alert">
                         <td>Despacho</td>
-                        <td><b>$ 3900</b></td>
+                        <td><b>$ {costoEnvio}</b></td>
                     </tr>
                     <tr className="alert alert-success" role="alert">
                         <td>Total a pagar</td>
-                        <td><b>$ {((totalPrice() * 1.19) + 3900).toFixed(0)}</b></td>
+                        <td><b>$ {((totalPrice() * 1.19) + costoEnvio).toFixed(0)}</b></td>
                     </tr>
                 </tbody>
             </table>

@@ -40,7 +40,6 @@ const Checkout = () => {
                 <div className="container text-center py-5">
                     <button type="button" className="btn btn-success"><a className="boton" href="https://www.webpay.cl">Continuar</a></button>
                 </div>
-
                 </>
             }
         </>
