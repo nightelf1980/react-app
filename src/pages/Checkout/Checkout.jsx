@@ -53,7 +53,7 @@ const Checkout = () => {
                                     <td><b>$ {(totalPrice() * 1.19).toFixed(0)}</b></td>
                                 </tr>
                                 <tr className="alert" role="alert">
-                                    <td colSpan={2}><button type="button" className="btn btn-success"><a className="btn btn-success" href="https://www.webpay.cl">Pagar</a></button></td>
+                                    <td colSpan={2}><button type="button" className="btn btn-success"><a className="boton" href="https://www.webpay.cl">Pagar</a></button></td>
                                 </tr>
                             </tbody>
                         </table>

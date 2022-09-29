@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ItemCart from "../../Components/ItemCart/ItemCart";
 import { useCartContext } from "../../context/CartContext"
+import "../Cart/Cart.css"
 
 const Cart = () => {
 /*     const carroVacio = false; */
@@ -56,7 +57,7 @@ const Cart = () => {
                             <button className="btn btn-danger" onClick={clearCart}>Vaciar carro</button>
                         </div>
                         <div className="col-md-2">
-                            <button className="btn btn-shop-primary"><Link to="/pages/cart/checkout" className="btn btn-shop-primary">Finalizar Compra</Link></button>
+                            <button className="btn btn-shop-primary"><Link to="/pages/cart/checkout" className="boton">Finalizar Compra</Link></button>
                         </div>
                     </div>
 

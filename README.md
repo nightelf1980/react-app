@@ -35,7 +35,7 @@ Full stack Student
 | Brand logo | ![#EC5F5D](https://via.placeholder.com/10/EC5F5D?text=+) #EC5F5D |
 | Brand logo | ![#DA4044](https://via.placeholder.com/10/DA4044?text=+) #DA4044 |
 | Brand logo | ![#F9C260](https://via.placeholder.com/10/EC5F5D?text=+) #F9C260 |
-| Brand logo | ![#00000](https://via.placeholder.com/10/000000?text=+) #000000 |
+| Brand logo | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
 
 

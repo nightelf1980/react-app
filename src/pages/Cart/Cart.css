@@ -1,0 +1,9 @@
+.boton {
+    color: white;
+    text-decoration: none;
+}
+
+.boton:hover {
+    color: white;
+    text-decoration: none; 
+}

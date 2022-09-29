@@ -3,7 +3,7 @@ import { useCartContext } from "../../context/CartContext"
 
 export default function CartCounter({ inicialValue, product, maxStock }) {
 
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState();
     const { handleQuantity } = useCartContext();
     const addToCounter = () => {
       if (contador < maxStock) {

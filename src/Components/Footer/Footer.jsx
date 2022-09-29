@@ -57,9 +57,9 @@ const Footer = () => {
                         {/* FACEBOOK */}
                         <Link className="btn btn-floating m-1 text-primary" role="button" to="*"><i className="fab fa-facebook"></i></Link>
                         {/* WHATSAPP */}
-                        <Link className="btn btn-floating m-1 text-success" role="button" to={{ pathname: "https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n."}} target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></Link>
+                        <a className="btn btn-floating m-1 text-success" role="button" href="https://api.whatsapp.com/send?phone=56982433747&text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noreferrer"><i className="fab fa-whatsapp"></i></a>
                         {/* INSTAGRAM */}
-                        <Link className="btn btn-floating m-1 text-danger" role="button" to={{ pathname: "https://www.instagram.com/jardineria_artemis"}} target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></Link>
+                        <a className="btn btn-floating m-1 text-danger" role="button" href="https://www.instagram.com/jardineria_artemis" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
