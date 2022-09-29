@@ -28,7 +28,7 @@ Full stack Student
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Brand logo | ![#E09B52](https://via.placeholder.com/10/E09B52?text=#E09B52) |
+| Brand logo | ![(#E09B52)](https://via.placeholder.com/10/E09B52?text=#E09B52) |
 | Brand logo | ![#B0733A](https://via.placeholder.com/10/B0733A2?text=#B0733A) |
 | Brand logo | ![#97C456](https://via.placeholder.com/10/97C456?text=#97C456) |
 | Brand logo | ![#799946](https://via.placeholder.com/10/799946?text=#799946) |
