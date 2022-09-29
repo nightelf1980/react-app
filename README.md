@@ -28,14 +28,14 @@ Full stack Student
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Brand logo | ![#E09B52](https://via.placeholder.com/10/E09B52?text=+) #E09B52 |
-| Brand logo | ![#B0733A](https://via.placeholder.com/10/B0733A2?text=+) #B0733A |
-| Brand logo | ![#97C456](https://via.placeholder.com/10/97C456?text=+) #97C456 |
-| Brand logo | ![#799946](https://via.placeholder.com/10/799946?text=+) #799946 |
-| Brand logo | ![#EC5F5D](https://via.placeholder.com/10/EC5F5D?text=+) #EC5F5D |
-| Brand logo | ![#DA4044](https://via.placeholder.com/10/DA4044?text=+) #DA4044 |
-| Brand logo | ![#F9C260](https://via.placeholder.com/10/EC5F5D?text=+) #F9C260 |
-| Brand logo | ![#00000](https://via.placeholder.com/10/00000?text=+) #00000 |
+| Brand logo | ![#E09B52](https://via.placeholder.com/10/E09B52?text=#E09B52) |
+| Brand logo | ![#B0733A](https://via.placeholder.com/10/B0733A2?text=#B0733A) |
+| Brand logo | ![#97C456](https://via.placeholder.com/10/97C456?text=#97C456) |
+| Brand logo | ![#799946](https://via.placeholder.com/10/799946?text=#799946) |
+| Brand logo | ![#EC5F5D](https://via.placeholder.com/10/EC5F5D?text=#EC5F5D) |
+| Brand logo | ![#DA4044](https://via.placeholder.com/10/DA4044?text=#DA4044) |
+| Brand logo | ![#F9C260](https://via.placeholder.com/10/EC5F5D?text=#F9C260) |
+| Brand logo | ![#00000](https://via.placeholder.com/10/00000?text=#00000) |
 
 
 
