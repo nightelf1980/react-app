@@ -2,8 +2,8 @@ import React from "react";
 
 const FormCheckout = () => {
     return (
-        <form className="container py-5">
-            <h1>Datos de contacto</h1>
+        <form className="container py-3">
+            <h2 className="text-center">Datos de contacto y dirección de despacho</h2>
             <div className="row">
                 <div className="form-group col-md-4">
                 <label for="inputName">Nombres</label>
@@ -58,9 +58,6 @@ const FormCheckout = () => {
                     <label for="inputZip">Código Postal</label>
                     <input type="text" className="form-control" id="inputZip" placeholder="Código Postal"/>
                 </div>
-            </div>
-            <div className="container text-center py-5">
-                <button type="button" className="btn btn-success"><a className="boton" href="https://www.webpay.cl">Continuar</a></button>
             </div>
         </form>
     )

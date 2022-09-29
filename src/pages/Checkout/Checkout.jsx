@@ -2,17 +2,22 @@ import React from "react";
 import ItemCartCheckout from "../../Components/ItemCartCheckout/ItemCartCheckout";
 import { useCartContext } from "../../context/CartContext"
 import FormCheckout from "../Checkout/FormCheckout"
+import Summary from "./Summary";
 
 const Checkout = () => {
 
-    const {cart, totalPrice, totalProducts} = useCartContext()
+    const {cart} = useCartContext()
 
     return (
         <>
             {
                 <>
-                <div className="container d-flex">
-                    <div className="col-md-8 text-center">
+                <div className="container">
+                    <div className="py-3">
+                        <FormCheckout />
+                    </div>
+                    <div className="row text-center py-3">
+                        <h2>Resumen de Productos</h2>
                         <table className="table">
                             <thead>
                                 <tr>
@@ -28,39 +33,14 @@ const Checkout = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className="col-md-1">
-                    </div>
-                    <div className="col-md-3 text-center">
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th colSpan={2}>Resumen de tu compra</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr className="alert" role="alert">
-                                    <td>Cantidad de productos</td>
-                                    <td><b>{totalProducts()}</b></td>
-                                </tr>
-                                <tr className="alert" role="alert">
-                                    <td>Total</td>
-                                    <td><b>$ {(totalPrice()).toFixed(0)}</b></td>
-                                </tr>
-                                <tr className="alert" role="alert">
-                                    <td>IVA 19%</td>
-                                    <td><b>$ {(totalPrice() * 0.19).toFixed(0)}</b></td>
-                                </tr>
-                                <tr className="alert alert-success" role="alert">
-                                    <td>Total a pagar</td>
-                                    <td><b>$ {(totalPrice() * 1.19).toFixed(0)}</b></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                </div >
+
+                    <Summary />
+
+                <div className="container text-center py-5">
+                    <button type="button" className="btn btn-success"><a className="boton" href="https://www.webpay.cl">Continuar</a></button>
                 </div>
-                <div>
-                    <FormCheckout />
-                </div>
+
                 </>
             }
         </>
