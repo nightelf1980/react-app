@@ -1,6 +1,7 @@
 import React from "react";
 import ItemCartCheckout from "../../Components/ItemCartCheckout/ItemCartCheckout";
 import { useCartContext } from "../../context/CartContext"
+import FormCheckout from "../Checkout/FormCheckout"
 
 const Checkout = () => {
 
@@ -9,6 +10,7 @@ const Checkout = () => {
     return (
         <>
             {
+                <>
                 <div className="container d-flex">
                     <div className="col-md-8 text-center">
                         <table className="table">
@@ -52,13 +54,14 @@ const Checkout = () => {
                                     <td>Total a pagar</td>
                                     <td><b>$ {(totalPrice() * 1.19).toFixed(0)}</b></td>
                                 </tr>
-                                <tr className="alert" role="alert">
-                                    <td colSpan={2}><button type="button" className="btn btn-success"><a className="boton" href="https://www.webpay.cl">Pagar</a></button></td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                <div>
+                    <FormCheckout />
+                </div>
+                </>
             }
         </>
     )
