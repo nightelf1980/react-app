@@ -26,7 +26,7 @@ const FormCheckout = () => {
             total
         }
 
-        const refOrder = collection(db, 'ordersproducts')
+        const refOrder = collection(db, 'orders')
         addDoc(refOrder, order).then((res) => {
             console.log(res.id);
             }
