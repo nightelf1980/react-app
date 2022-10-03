@@ -29,6 +29,7 @@ const FormCheckout = () => {
         const refOrder = collection(db, 'orders')
         addDoc(refOrder, order).then((res) => {
             console.log(res.id);
+            const orderId = res.id
             }
         )
     }

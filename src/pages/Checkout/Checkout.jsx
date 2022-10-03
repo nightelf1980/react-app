@@ -5,7 +5,6 @@ import FormCheckout from "../Checkout/FormCheckout"
 import Summary from "./Summary";
 
 const Checkout = () => {
-
     const {cart} = useCartContext()
 
     return (
