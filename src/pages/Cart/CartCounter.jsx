@@ -33,7 +33,7 @@ export default function CartCounter({ inicialValue, product, maxStock }) {
       <>
         <td className="align-middle text-center">
             <button className='btn m-2' onClick={substractCounter}>
-                <i class="fa-solid fa-minus text-danger" />
+                <i className="fa-solid fa-minus text-danger" />
             </button>
             
                 {contador}

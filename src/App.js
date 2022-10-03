@@ -13,6 +13,7 @@ import Footer from './Components/Footer/Footer';
 import Error404 from './Components/Error404/Error404';
 import CartProvider from './context/CartContext';
 import Checkout from './pages/Checkout/Checkout';
+import OrderId from './pages/Checkout/OrderId';
 
 function App () {
   return (
@@ -31,6 +32,7 @@ function App () {
             <Route path='/pages/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path="/pages/cart" element ={<Cart />} />
             <Route path="/pages/cart/checkout" element ={<Checkout />} />
+            <Route path='/pages/cart/orderid' element= {< OrderId/>} />
             <Route path="*" element ={<Error404 />} />
           </Routes>
           <Footer />

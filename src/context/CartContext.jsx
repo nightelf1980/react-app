@@ -34,9 +34,6 @@ const CartProvider = ({ children }) => {
         setCart([...cart]);
       };
 
-    console.log("Array Carrito", cart)
-    console.log(cart.length)
-
     return (
         <CartContext.Provider value={{
             clearCart,

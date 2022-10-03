@@ -1,39 +1,87 @@
-import React from "react";
+import React, {useState} from "react";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { useCartContext } from "../../context/CartContext"
+import {db} from "../../Firebase/firebaseConfig"
+import { Link } from "react-router-dom";
 
 const FormCheckout = () => {
+    const [firstname, setFirstName] = useState('')
+    const [lastname, setLastName] = useState('')
+    const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
+    const [adress, setAdress1] = useState('')
+    const [adressmas, setAdress2] = useState('')
+    const [city, setCity] = useState('')
+    const [state, setState] = useState('')
+    const [zipcode, setZipcode] = useState('')
+    const {cart, totalPrice} = useCartContext()
+    const total = totalPrice()
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const order = {
+            buyer: {firstname, lastname, phone, email, adress, adressmas, city, state, zipcode},
+            date: serverTimestamp(),
+            // cart,
+            total
+        }
+
+        const refOrder = collection(db, 'ordersproducts')
+        addDoc(refOrder, order).then((res) => {
+            console.log(res.id);
+            }
+        )
+    }
+
+    const handleFirstName = (e) => setFirstName(e.target.value)
+    const handleLastName = (e) => setLastName(e.target.value)
+    const handlePhone = (e) => setPhone(e.target.value)
+    const handleEmail = (e) => setEmail(e.target.value)
+    const handleAdress1 = (e) => setAdress1(e.target.value)
+    const handleAdress2 = (e) => setAdress2(e.target.value)
+    const handleCity = (e) => setCity(e.target.value)
+    const handleState = (e) => setState(e.target.value)
+    const handleZipcode = (e) => setZipcode(e.target.value)
+
     return (
-        <form className="container py-3">
+        <form action="" onSubmit={handleSubmit} className="container py-3">
             <h2 className="text-center">Datos de contacto y dirección de despacho</h2>
             <div className="row">
-                <div className="form-group col-md-4">
-                <label for="inputName">Nombres</label>
-                    <input type="text" className="form-control" placeholder="Nombres" aria-label="First name" />
+                <div className="form-group col-md-6">
+                <label htmlFor="inputName">Nombres</label>
+                    <input type="text" className="form-control" placeholder="Nombres" aria-label="First name" value={firstname} onChange={handleFirstName}/>
                 </div>
-                <div className="form-group col-md-4">
-                <label for="inputlastName">Apellidos</label>
-                    <input type="text" className="form-control" placeholder="Apellidos" aria-label="Last name" />
+                <div className="form-group col-md-6">
+                <label htmlFor="inputlastName">Apellidos</label>
+                    <input type="text" className="form-control" placeholder="Apellidos" aria-label="Last name" value={lastname} onChange={handleLastName}/>
                 </div>
-                <div className="form-group col-md-4">
-                    <label for="inputEmail4">Correo electrónico</label>
-                    <input type="email" className="form-control" id="inputEmail4" placeholder="Correo electrónico" />
+            </div>
+            <div className="row">
+                <div className="form-group col-md-6">
+                    <label htmlFor="phone">Número de teléfono</label>
+                    <input type="phone" className="form-control" id="phone" placeholder="981234567" value={phone} onChange={handlePhone}/>
+                </div>
+                <div className="form-group col-md-6">
+                    <label htmlFor="email">Correo electrónico</label>
+                    <input type="email" className="form-control" id="email" placeholder="Correo electrónico" value={email} onChange={handleEmail}/>
                 </div>
             </div>
             <div className="form-group">
-                <label for="inputAddress">Dirección</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="Dirección" />
+                <label htmlFor="inputAddress">Dirección</label>
+                <input type="text" className="form-control" id="inputAddress" placeholder="Dirección" value={adress} onChange={handleAdress1}/>
             </div>
             <div className="form-group">
-                <label for="inputAddress2">Departamento/Block/Piso</label>
-                <input type="text" className="form-control" id="inputAddress2" placeholder="Departamento, Block, Piso" />
+                <label htmlFor="inputAddress2">Departamento/Block/Piso</label>
+                <input type="text" className="form-control" id="inputAddress2" placeholder="Departamento, Block, Piso" value={adressmas} onChange={handleAdress2}/>
             </div>
             <div className="form-row">
                 <div className="form-group col-md-6">
-                    <label for="inputCity">Ciudad</label>
-                    <input type="text" className="form-control" id="inputCity" placeholder="Ciudad"/>
+                    <label htmlFor="inputCity">Ciudad</label>
+                    <input type="text" className="form-control" id="inputCity" placeholder="Ciudad" value={city} onChange={handleCity}/>
                 </div>
                 <div className="form-group col-md-6">
-                    <label for="inputState">Región</label>
-                    <select id="inputState" className="form-control">
+                    <label htmlFor="inputState">Región</label>
+                    <select id="inputState" className="form-control" value={state} onChange={handleState}>
                         <option defaultValue>Elije una Región</option>
                         <option>Arica y Parinacota</option>
                         <option>Tarapacá</option>
@@ -55,9 +103,12 @@ const FormCheckout = () => {
             </div>
             <div className="form row">
                 <div className="form-group col-md-2">
-                    <label for="inputZip">Código Postal</label>
-                    <input type="text" className="form-control" id="inputZip" placeholder="Código Postal"/>
+                    <label htmlFor="inputZip">Código Postal</label>
+                    <input type="text" className="form-control" id="inputZip" placeholder="Código Postal" value={zipcode} onChange={handleZipcode}/>
                 </div>
+            </div>
+            <div className="container text-center py-5">
+                <button type="submit" className="btn btn-success"><Link className="boton" to="/pages/cart/orderid">Enviar</Link></button>
             </div>
         </form>
     )

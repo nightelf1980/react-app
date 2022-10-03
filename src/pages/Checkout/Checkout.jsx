@@ -13,9 +13,7 @@ const Checkout = () => {
             {
                 <>
                 <div className="container">
-                    <div className="py-3">
-                        <FormCheckout />
-                    </div>
+
                     <div className="row text-center py-3">
                         <h2>Resumen de Productos</h2>
                         <table className="table">
@@ -37,9 +35,9 @@ const Checkout = () => {
 
                     <Summary />
 
-                <div className="container text-center py-5">
-                    <button type="button" className="btn btn-success"><a className="boton" href="https://www.webpay.cl">Continuar</a></button>
-                </div>
+                    <div className="py-3">
+                        <FormCheckout />
+                    </div>
                 </>
             }
         </>

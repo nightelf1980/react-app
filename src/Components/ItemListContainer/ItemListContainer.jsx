@@ -20,8 +20,6 @@ export const ItemListContainer = () => {
             getDocs(queryItems)
             .then(res => setItems(res.docs.map(product => ({id: product.id, ...product.data()}))))
         }
-
-
     }, [categoriaId])
    
     return (
