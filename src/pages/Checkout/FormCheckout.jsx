@@ -109,7 +109,7 @@ const FormCheckout = () => {
                 </div>
             </div>
             <div className="container text-center py-5">
-                <button type="submit" className="btn btn-success"><Link className="boton" to="/pages/cart/orderid">Enviar</Link></button>
+                <button type="submit" className="btn btn-success" onClick={handleSubmit}><Link className="boton" to="/pages/cart/orderid">Enviar</Link></button>
             </div>
         </form>
     )

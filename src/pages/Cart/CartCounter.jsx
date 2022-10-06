@@ -5,6 +5,7 @@ export default function CartCounter({ inicialValue, product, maxStock }) {
 
     const [contador, setContador] = useState(0);
     const { handleQuantity } = useCartContext();
+    
     const addToCounter = () => {
       if (contador < maxStock) {
         setContador((prevContador) => {
