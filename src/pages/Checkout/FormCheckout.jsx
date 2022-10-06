@@ -9,22 +9,24 @@ const FormCheckout = () => {
     const [lastname, setLastName] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
-    const [adress, setAdress1] = useState('')
-    const [adressmas, setAdress2] = useState('')
+    const [adress1, setAdress1] = useState('')
+    const [adress2, setAdress2] = useState('')
     const [city, setCity] = useState('')
     const [state, setState] = useState('')
     const [zipcode, setZipcode] = useState('')
-    const {cart, totalPrice} = useCartContext()
-    const total = totalPrice()
+    const {cart, totalPrice, clearCart} = useCartContext()
+    const total = (totalPrice()*1.19).toFixed(0)
 
     const handleSubmit = (e) => {
         e.preventDefault()
         const order = {
-            buyer: {firstname, lastname, phone, email, adress, adressmas, city, state, zipcode},
+            buyer: {firstname, lastname, phone, email, adress1, adress2, city, state, zipcode},
             date: serverTimestamp(),
-            // cart,
+            cart,
             total
         }
+
+        clearCart()
 
         const refOrder = collection(db, 'orders')
         addDoc(refOrder, order).then((res) => {
@@ -69,11 +71,11 @@ const FormCheckout = () => {
             </div>
             <div className="form-group">
                 <label htmlFor="inputAddress">Dirección</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="Dirección" value={adress} onChange={handleAdress1}/>
+                <input type="text" className="form-control" id="inputAddress" placeholder="Dirección" value={adress1} onChange={handleAdress1}/>
             </div>
             <div className="form-group">
                 <label htmlFor="inputAddress2">Departamento/Block/Piso</label>
-                <input type="text" className="form-control" id="inputAddress2" placeholder="Departamento, Block, Piso" value={adressmas} onChange={handleAdress2}/>
+                <input type="text" className="form-control" id="inputAddress2" placeholder="Departamento, Block, Piso" value={adress2} onChange={handleAdress2}/>
             </div>
             <div className="form-row">
                 <div className="form-group col-md-6">
