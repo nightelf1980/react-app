@@ -2,7 +2,9 @@ import React from "react";
 
 const Servicios = () => {
     return (
-        <h2 className="text-center">Servicios</h2>
+        <div className='container-fluid text-center'>
+            <img src="../../img/servicios.png" alt="servicios" />
+        </div>
     )
 }
 

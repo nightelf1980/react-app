@@ -2,8 +2,8 @@ import React from "react";
 
 const Nosotros = () => {
     return (
-        <div className='container'>
-            <h2 className="justify-content-center">Nosotros</h2>
+        <div className='container-fluid text-center'>
+            <img src="../../img/nosotros.png" alt="nosotros" />
         </div>
     )
 }
